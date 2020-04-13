@@ -1,0 +1,5 @@
+FOXG1_forkhead_2	ACGGACACAATG	+	12	0	0	203
+FOXK1_forkhead_1	CGGACACAAT	+	10	1	1	203
+Foxj3.mouse_forkhead_1	ACGGACACAAT	+	11	0	1	203
+Foxk1.mouse_forkhead_1	CGGACACAATC	+	11	1	0	203
+Foxg1.mouse_forkhead_2	CCGGACACAATC	+	12	0	0	203

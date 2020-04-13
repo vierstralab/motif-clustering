@@ -1,0 +1,1 @@
+22	HOXA10_homeodomain_1	12	1	10	24

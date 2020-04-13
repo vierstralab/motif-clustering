@@ -1,0 +1,3 @@
+OTX1_homeodomain_1	GTTAATCCGATTAAC	+	15	0	0	25
+Otx1.mouse_homeodomain_1	GTTAATCCGATTAAC	+	15	0	0	25
+OTX2_homeodomain_1	GTTAATCCGATTAAC	+	15	0	0	25

@@ -1,0 +1,1 @@
+FOXB1_forkhead_1	GAATGACACAGCGA	+	14	0	0	279

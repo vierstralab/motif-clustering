@@ -1,0 +1,11 @@
+BARHL2_MA0635.1	GCTAAACGGT	+	10	8	0	6
+BARHL2_homeodomain_4	GCTAAACGGT	+	10	8	0	6
+Barhl1.mouse_homeodomain_1	GCTAAACGGT	+	10	8	0	6
+BARHL2_homeodomain_1	GTTAAACGGT	+	10	8	0	6
+BARHL2_homeodomain_2	GTTAATTGCT	+	10	8	0	6
+Barhl1.mouse_homeodomain_2	GCTAATTGCT	+	10	8	0	6
+Barhl1_MA0877.1	GCTAATTGCT	+	10	8	0	6
+BARHL2_homeodomain_5	GCTAATTGCT	+	10	8	0	6
+Barhl1.mouse_homeodomain_3	TAATTGCTGCTAAATG	+	16	0	2	6
+BARHL2_homeodomain_3	TAATTGGTGTTAAATG	+	16	0	2	6
+BARHL2_homeodomain_6	TAATTGGTGCTAATTG	+	16	0	2	6

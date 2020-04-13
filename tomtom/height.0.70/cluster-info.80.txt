@@ -1,0 +1,1 @@
+80	FOXC1_forkhead_1	22	5	17	51

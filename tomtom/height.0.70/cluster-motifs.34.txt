@@ -1,0 +1,2 @@
+THRA_nuclearreceptor_1	GTGACCTTATGAGGTCAC	+	18	0	0	34
+THRB_nuclearreceptor_1	GTGACCTTATAAGGTCAC	+	18	0	0	34
