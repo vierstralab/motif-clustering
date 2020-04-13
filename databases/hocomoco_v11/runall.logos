@@ -1,0 +1,17 @@
+mkdir -p logos/
+
+#HUMAN
+
+motifs=$(tail -n +2 HOCOMOCOv11_core_annotation_HUMAN_mono.tsv | cut -f1)
+
+for m in $motifs; do
+	ceqlogo -i HOCOMOCOv11_core_HUMAN_mono_meme_format.meme -m ${m} -o logos/${m}.eps -f EPS
+done
+
+#MOUSE
+
+motifs=$(tail -n +2 HOCOMOCOv11_core_annotation_MOUSE_mono.tsv | cut -f1)
+
+for m in $motifs; do
+	ceqlogo -i HOCOMOCOv11_core_MOUSE_mono_meme_format.meme -m ${m} -o logos/${m}.eps -f EPS
+done

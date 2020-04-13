@@ -1,0 +1,32 @@
+#!/bin/bash
+
+rm -f table_s3-*.meme
+
+#NB for some reason $1~/[a-z]/ matches case insensitive below, so had to use toupper
+#TODO possibly filter PWM "removed from network representations"
+num=`sed "s/[,]*$//g" table_s3.csv | tr "," "\t"\
+       | perl -pe 's/,+$//g;' \
+       | awk 'BEGIN { i = 1; }\
+              NR%5 == 1 {\
+                     n += 1;\
+                     if(n > 150) { n = 1; i += 1; };\
+                     \
+                     if(toupper($1)!=$1) \
+                     { $1 = $1 ".mouse" } \
+                     x[$1] += 1; \
+                     \
+                     $1 = $1 "_" $2 "_"x[$1]; \
+                     print ">"$1 > "table_s3-"i".scpd"; \
+                     \
+                     next;\
+              }  \
+              { print $0 > "table_s3-"i".scpd"; }\
+              END { print i; }'`
+
+for i in $(seq 1 ${num}); do
+
+	scpd2meme table_s3-${i}.scpd > table_s3-${i}.meme
+	rm table_s3-${i}.scpd
+done
+
+cat table_s3*.meme | grep "MOTIF" | cut -d" " -f2 | awk -v OFS="\t" -v FS="_" 'BEGIN { print "motif", "tf", "dbd_family"q} { print $0, $1, $2; }'  > annotation.txt
