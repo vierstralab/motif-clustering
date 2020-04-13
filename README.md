@@ -1,2 +1,61 @@
 # motif-clustering
 Clustering motif models to remove redundancy
+
+## Requirements
+
+- Python 2.7
+  - numpy, scipy
+  - genome-tools (http://www.github.com/jvierstra/genome-tools)
+- Tomtom (http://meme-suite.org/doc/download.html)
+
+## Included motif databases
+
+- Jolma et al., Cell 2013 (Supplemental Table 2) 
+- JASPAR 2018
+- HOCOMOCO version 11
+
+## Step 1: Compute pair-wise motif similarity
+
+Here we TOMTOM to determine the similarity between all motif models (all pairwise) with the following code:
+
+```
+meme2meme databases/*/*.meme > tomtom/all.dbs.meme
+
+tomtom \
+	-bfile /net/seq/data/projects/motifs/hg19.K36.mappable_only.5-order.markov \
+	-dist kullback \
+	-motif-pseudo 0.1 \
+	-text \
+	-min-overlap 1 \
+	tomtom/all.dbs.meme tomtom/all.dbs.meme \
+> tomtom/tomtom.all.txt
+```
+
+I have a provided a script that will load this operation up on a SLURM parallel compute cluster (see [e](runall))
+
+## Step 2: Hierarchically cluster motifs by similarity
+
+```
+python2 hierarchical.py tomtom/tomtom.all.txt tomtom
+```
+
+This script performs hierarchical clustering (distance: correlation, complete linkage) and provides an output of cluster assignments at a range of tree heights (0.5-1).
+
+## Step 3: Process each cluster to build a motif archetype
+
+```
+mkdir -p tomtom/height.0.70/viz
+
+python2 process_cluster.py \
+  tomtom/tomtom.all.txt \
+  tomtom/clusters.0.70.txt \
+  62 \
+  tomtom/height.0.70
+```
+
+```
+python2 viz_cluster.py \
+  tomtom/height.0.70/cluster-info.62.txt \
+  tomtom/height.0.70/cluster-motifs.62.txt \
+  tomtom/height.0.70/viz/cluster.62 
+ ```
