@@ -41,6 +41,8 @@ python2 hierarchical.py tomtom/tomtom.all.txt tomtom
 
 This script performs hierarchical clustering (distance: correlation, complete linkage) and provides an output of cluster assignments at a range of tree heights (0.5-1).
 
+![Clustered heatmap cut at height 0.7](tomtom/height.0.70/heatmap.png)
+
 ## Step 3: Process each cluster to build a motif archetype
 
 ```
@@ -53,9 +55,18 @@ python2 process_cluster.py \
   tomtom/height.0.70
 ```
 
+This command generates two files (per motif cluster).
+
 ```
 python2 viz_cluster.py \
   tomtom/height.0.70/cluster-info.62.txt \
   tomtom/height.0.70/cluster-motifs.62.txt \
   tomtom/height.0.70/viz/cluster.62 
  ```
+
+This wiil create a PDF and PNG with visualizing motif cluster #62 corresponding to the basic helix-loop-helix DBD containing OLIG/NEUROG. Dashed lines demarcate the boundaries of the "archetypal" motif position. The motif matches for the constituent models have will have their coordinates adjusted to match.
+
+
+C62:OLIG (bHLH)|  C69:RUNX (RUNX domain)
+:-------------------------:|:-------------------------:
+![C62:OLIG](tomtom/height.0.70/viz/cluster.62.png)| ![C69:MEIS](tomtom/height.0.70/viz/cluster.179.png)
