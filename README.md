@@ -39,7 +39,7 @@ I have a provided a script that will load this operation up on a SLURM parallel 
 python2 hierarchical.py tomtom/tomtom.all.txt tomtom
 ```
 
-This script performs hierarchical clustering (distance: correlation, complete linkage) and provides an output of cluster assignments at a range of tree heights (0.5-1).
+This script performs hierarchical clustering (distance: correlation, complete linkage) and provides an output of cluster assignments at a range of tree heights (0.5-1). Below is a heatmap representation of motifs clustered by simililarity and clusters identified cutting the dendrogram at height 0.7.
 
 ![Clustered heatmap cut at height 0.7](tomtom/height.0.70/heatmap.png)
 
