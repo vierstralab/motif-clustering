@@ -14,6 +14,16 @@ Clustering motif models to remove redundancy
 - JASPAR 2018
 - HOCOMOCO version 11
 
+## Pre-computed data (GRCh38/hg38)
+
+We have pre-computed genome-wide scans for both human and mouse genomes.
+- Human (GRCh38/h38)
+	- Full motif matches (2179 motif models)
+	- Collapsed motifs by similarity (286 motif clusters)
+- Mouse (mm10)
+	- Full motif matches (2179 motif models)
+	- Collapsed motifs by similarity (286 motif clusters)
+
 ## Step 1: Compute pair-wise motif similarity
 
 Here we TOMTOM to determine the similarity between all motif models (all pairwise) with the following code:
@@ -70,3 +80,33 @@ This wiil create a PDF and PNG with visualizing motif cluster #62 corresponding 
 C62:OLIG (bHLH)|  C69:RUNX (RUNX domain)
 :-------------------------:|:-------------------------:
 ![C62:OLIG](tomtom/height.0.70/viz/cluster.62.png)| ![C69:MEIS](tomtom/height.0.70/viz/cluster.179.png)
+
+
+```
+fetchChromSizes hg38 > /tmp/chrom.sizes
+awk -v OFS="\t" '{ print $1, 0, $2; }' /tmp/chrom.sizes | sort-bed - > /tmp/chrom.sizes.bed
+zcat moods.combined.all.bed.gz | bedops -e 100% - /tmp/chrom.sizes.bed \
+	| awk -v OFS="\t" '{ print $1, $2, $3, $4, 1000, $6, $2, $3, "255,0,0", $7, $5; }' > /tmp/moods
+```
+
+To create a bigBed file from a bed9+2, we need to include an AutoSql file (bed_format.as)
+```
+table hg38_motifs_collapsed
+"Collapsed motifs matches in hg38 (see: http://www.github.com/jvierstra/motif-clustering)"
+(
+string  chrom;        "Reference sequence chromosome or scaffold"
+uint    chromStart;    "Start position of feature on chromosome"
+uint    chromEnd;    "End position of feature on chromosome"
+string  name;        "Name of gene"
+uint    score;        "Score"
+char[1] strand;        "+ or - for strand"
+uint    thickStart;    "Coding region start"
+uint    thickEnd;    "Coding region end"
+uint      reserved;    "itemRgb"
+string  motif_match_id;    "Motif identifier"
+float  motif_match_score;        "Motif match score (MOODS score)"
+)
+```
+```
+bedToBigBed -as=bed_format.as -type=bed9+2 -tab /tmp/moods /tmp/chrom.sizes moods.combined.all.bb
+```
