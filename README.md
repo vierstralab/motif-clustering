@@ -12,7 +12,7 @@ Clustering motif models to remove redundancy
 
 - Jolma et al., Cell 2013 (Supplemental Table 2) 
 - JASPAR 2018
-- HOCOMOCO version 11
+- HOCOMOCO version 11 (757 motif models; both human and mouse)
 
 ## Pre-computed data (GRCh38/hg38)
 
@@ -77,7 +77,7 @@ python2 viz_cluster.py \
 This wiil create a PDF and PNG with visualizing motif cluster #62 corresponding to the basic helix-loop-helix DBD containing OLIG/NEUROG. Dashed lines demarcate the boundaries of the "archetypal" motif position. The motif matches for the constituent models have will have their coordinates adjusted to match.
 
 
-C62:OLIG (bHLH)|  C69:RUNX (RUNX domain)
+C62:OLIG (bHLH)|  C179:RUNX (RUNX domain)
 :-------------------------:|:-------------------------:
 ![C62:OLIG](tomtom/height.0.70/viz/cluster.62.png)| ![C69:MEIS](tomtom/height.0.70/viz/cluster.179.png)
 
@@ -86,7 +86,10 @@ C62:OLIG (bHLH)|  C69:RUNX (RUNX domain)
 fetchChromSizes hg38 > /tmp/chrom.sizes
 awk -v OFS="\t" '{ print $1, 0, $2; }' /tmp/chrom.sizes | sort-bed - > /tmp/chrom.sizes.bed
 zcat moods.combined.all.bed.gz | bedops -e 100% - /tmp/chrom.sizes.bed \
-	| awk -v OFS="\t" '{ print $1, $2, $3, $4, 1000, $6, $2, $3, "255,0,0", $7, $5; }' > /tmp/moods
+| python2 /home/jvierstra/proj/code/motif-clustering/relabel.py  \
+	/home/jvierstra/proj/code/motif-clustering/tomtom/height.0.70/cluster-info.with.dbd.and.color.csv \
+| head -n10000 > /tmp/moods
+
 ```
 
 To create a bigBed file from a bed9+2, we need to include an AutoSql file (bed_format.as)
@@ -105,8 +108,10 @@ uint    thickEnd;    "Coding region end"
 uint      reserved;    "itemRgb"
 string  motif_match_id;    "Motif identifier"
 float  motif_match_score;        "Motif match score (MOODS score)"
+string DBD;     "DNA binding domain"
+uint n; "Number of motif matches from cluster"
 )
 ```
 ```
-bedToBigBed -as=bed_format.as -type=bed9+2 -tab /tmp/moods /tmp/chrom.sizes moods.combined.all.bb
+bedToBigBed -as=bed_format.as -type=bed9+4 -tab /tmp/moods /tmp/chrom.sizes moods.combined.all.bb
 ```
