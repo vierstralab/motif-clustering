@@ -113,5 +113,7 @@ uint n; "Number of motif matches from cluster"
 )
 ```
 ```
-bedToBigBed -as=bed_format.as -type=bed9+4 -tab /tmp/moods /tmp/chrom.sizes moods.combined.all.bb
+bedToBigBed -as=bed_format.as -type=bed9+4 -tab moods.combined.all.bed chrom.sizes moods.combined.all.bb
+awk -v OFS="\t" '{ print $1, $2, $3, $4, $11, $6, $10, $13}' moods.combined.all.bed | bgzip -c > moods.combined.all.bed.gz
+tabix -p bed moods.combined.all.bed.gz
 ```
