@@ -1,7 +1,7 @@
 # Non-redundant TF motif matches genome-wide
 
-Below describe the general workflow for clustering motif models to remove redundancy, generating an "archetype" motif, and then finally, performing genome-wide scans of motifs and remvoval of redundancy.
-Note that this documentation is  ***incomplete***, as should be used a a rough guide only.
+Below describes the general workflow for clustering motif models to remove redundancy, generating an "archetype" motif, and then finally, performing genome-wide scans of motifs and remvoval of redundancy.
+Please note that this documentation is  ***incomplete***, as should be used a a rough guide only.
 
 If you are looking for the final results (motif clusters, genome-wide scans and a browser shot) please see the following website:
 https://resources.altius.org/~jvierstra/projects/motif-clustering/
