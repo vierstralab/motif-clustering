@@ -3,7 +3,7 @@
 Below describe the general workflow for clustering motif models to remove redundancy, generating an "archetype" motif, and then finally, performing genome-wide scans of motifs and remvoval of redundancy.
 Note that this documentation is  ***incomplete***, as should be used a a rough guide only.
 
-If you are looking for a the final results (motif clusters, genome-wide scans and a browser shot) please see the following website:
+If you are looking for the final results (motif clusters, genome-wide scans and a browser shot) please see the following website:
 https://resources.altius.org/~jvierstra/projects/motif-clustering/
 
 Contact me at ```jvierstra (at) altius.org``` with any questions/requests/comments.
