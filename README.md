@@ -118,5 +118,5 @@ awk -v OFS="\t" '{ print $1, $2, $3, $4, $11, $6, $10, $13}' moods.combined.all.
 tabix -p bed moods.combined.all.bed.gz
 ```
 ```
-awk -v OFS="\t" '{ print $1, $2, $3, $4, 0, $6, $5, $7 }' moods.combined.all.bed > /tmp/moods &
+awk -v OFS="\t" '{ print $1, $2, $3, $4, 0, $6, $2, $3, "0,0,0", $5, $7 }' moods.combined.all.bed > /tmp/moods &
 ```
