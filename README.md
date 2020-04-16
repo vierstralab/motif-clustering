@@ -82,17 +82,9 @@ C62:OLIG (bHLH)|  C179:RUNX (RUNX domain)
 ![C62:OLIG](tomtom/height.0.70/viz/cluster.62.png)| ![C69:MEIS](tomtom/height.0.70/viz/cluster.179.png)
 
 
-```
-fetchChromSizes hg38 > /tmp/chrom.sizes
-awk -v OFS="\t" '{ print $1, 0, $2; }' /tmp/chrom.sizes | sort-bed - > /tmp/chrom.sizes.bed
-zcat moods.combined.all.bed.gz | bedops -e 100% - /tmp/chrom.sizes.bed \
-| python2 /home/jvierstra/proj/code/motif-clustering/relabel.py  \
-	/home/jvierstra/proj/code/motif-clustering/tomtom/height.0.70/cluster-info.with.dbd.and.color.csv \
-| head -n10000 > /tmp/moods
 
-```
 
-To create a bigBed file from a bed9+2, we need to include an AutoSql file (bed_format.as)
+To create a bigBed file from a bed9+4, we need to include an AutoSql file (bed_format.as)
 ```
 table hg38_motifs_collapsed
 "Collapsed motifs matches in hg38 (see: http://www.github.com/jvierstra/motif-clustering)"
@@ -112,11 +104,16 @@ string DBD;     "DNA binding domain"
 uint n; "Number of motif matches from cluster"
 )
 ```
-```
+
 bedToBigBed -as=bed_format.as -type=bed9+4 -tab moods.combined.all.bed chrom.sizes moods.combined.all.bb
 awk -v OFS="\t" '{ print $1, $2, $3, $4, $11, $6, $10, $13}' moods.combined.all.bed | bgzip -c > moods.combined.all.bed.gz
 tabix -p bed moods.combined.all.bed.gz
 ```
 ```
-awk -v OFS="\t" '{ print $1, $2, $3, $4, 0, $6, $2, $3, "0,0,0", $5, $7 }' moods.combined.all.bed > /tmp/moods &
+fetchChromSizes hg38 > /tmp/chrom.sizes
+awk -v OFS="\t" '{ print $1, 0, $2; }' /tmp/chrom.sizes | sort-bed - > /tmp/chrom.sizes.bed
+bedops -e 100% moods.combined.all.bed /tmp/chrom.sizes.bed \
+| awk -v OFS="\t" '{ print $1, $2, $3, $4, 0, $6, $2, $3, "0,0,0", $5, $7 }' > /tmp/moods &
+bedToBigBed -as=bed_format.as -type=bed9+2 -tab /tmp/moods chrom.sizes moods.combined.all.bb
+
 ```
