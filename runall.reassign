@@ -1,0 +1,58 @@
+#!/bin/bash
+
+raw_motif_file="/home/jvierstra/data/motifs/moods/GRCh38_no_alts.alldbs.1e-4/moods.combined.all.bed.gz"
+script_dir="/home/jvierstra/data/motifs/cluster/20181012"
+
+output_dir=`pwd`
+
+rm -rf ${output_dir}/logs ${output_dir}/chunks 
+mkdir -p ${output_dir}/logs
+mkdir -p ${output_dir}/chunks
+
+tabix --list-chr ${raw_motif_file} > ${output_dir}/inputs.txt
+n=`wc -l < inputs.txt`
+
+
+fetchChromSizes hg38 > ${output_dir}/chrom.sizes
+awk -v OFS="\t" '{ print $1, 0, $2; }' ${output_dir}/chrom.sizes | sort-bed - > ${output_dir}/chrom.sizes.bed
+
+
+cat <<__SCRIPT__ > ${output_dir}/slurm.reduce_chunk
+#!/bin/bash
+#SBATCH --output=${output_dir}/logs/%A.%a.out
+#SBATCH --mem=24G
+#SBATCH --cpus-per-task=1
+#SBATCH --partition=queue0
+
+module load bedops
+
+TMPDIR=/tmp/\$SLURM_JOB_ID
+mkdir -p \${TMPDIR}
+
+chrom=\`cat ${output_dir}/inputs.txt | head -n \${SLURM_ARRAY_TASK_ID} | tail -n 1\`
+
+
+tabix ${raw_motif_file} \${chrom} \
+| python2 ${script_dir}/reassign.py \
+| sort-bed --max-mem 22G - \
+| tee \${TMPDIR}/reassigned.bed \
+| cut -f1-3 | uniq \
+> \${TMPDIR}/reassigned.uniq-coords.bed
+
+bedmap --ec --fraction-both 1 --echo --echo-map \${TMPDIR}/reassigned.uniq-coords.bed \${TMPDIR}/reassigned.bed \
+| python2 ${script_dir}/combine.py \
+| bedops -e 100% - ${output_dir}/chrom.sizes.bed \
+| python2 /home/jvierstra/proj/code/motif-clustering/relabel.py  \
+	/home/jvierstra/proj/code/motif-clustering/tomtom/height.0.70/cluster-info.with.dbd.and.color.csv \
+> ${output_dir}/chunks/\${chrom}
+
+__SCRIPT__
+
+echo "submitting ${n} jobs to the cluster..."
+
+
+JOB0=$(sbatch --export=ALL --parsable \
+	--job-name="motif.reassign" \
+	--array=1-${n} \
+	${output_dir}/slurm.reduce_chunk)
+echo $JOB0

@@ -1,5 +1,12 @@
-# motif-clustering
-Clustering motif models to remove redundancy
+# Non-redundant TF motif matches genome-wide
+
+Below describe the general workflow for clustering motif models to remove redundancy, generating an "archetype" motif, and then finally, performingg genome-wide scans of motifs and remvoval of redundancy.
+Note this documentation is  ***incomplete***, as should be used a a rough guide.
+
+If you are looking for a the final results (motif clusters, genome-wide scans and a browser shot) please see the following website:
+https://resources.altius.org/~jvierstra/projects/motif-clustering/
+
+Contact me at ```jvierstra (at) altius.org``` with any questions/requests/comments.
 
 ## Requirements
 
@@ -7,6 +14,7 @@ Clustering motif models to remove redundancy
   - numpy, scipy
   - genome-tools (http://www.github.com/jvierstra/genome-tools)
 - Tomtom (http://meme-suite.org/doc/download.html)
+- bedops (http://bedops.readthedocs.io)
 
 ## Included motif databases
 
@@ -41,7 +49,7 @@ tomtom \
 > tomtom/tomtom.all.txt
 ```
 
-I have a provided a script that will load this operation up on a SLURM parallel compute cluster (see [e](runall))
+I have a provided a script that will load this operation up on a SLURM parallel compute cluster (see [runall.tomtom](runall.tomtom))
 
 ## Step 2: Hierarchically cluster motifs by similarity
 
@@ -67,6 +75,9 @@ python2 process_cluster.py \
 
 This command generates two files (per motif cluster).
 
+I have a provided a script that will load this operation up on a SLURM parallel compute cluster (see [runall.process_cluster](runall.process_cluster))
+
+
 ```
 python2 viz_cluster.py \
   tomtom/height.0.70/cluster-info.62.txt \
@@ -83,6 +94,15 @@ C62:OLIG (bHLH)|  C179:RUNX (RUNX domain)
 
 
 
+## Step 4: Scan genome using all motif models (individually) then resassign labels & coordinates
+
+I use the software package [MOODS](https://github.com/jhkorhonen/MOODS) to find motif matches genome-wide. Its a great tool and only that I highly reccomend.
+See [runall.scan_models](runall.scan_models) for an example of how to do this on a SLURM cluster.
+
+Finally, we need to translate the coordinates and motif labels for each motif match to their corresponding motif archetype (see [runall.reassign](runall.resassign)).
+
+
+## Step 5: Create working and browser tracks
 
 To create a bigBed file from a bed9+4, we need to include an AutoSql file (bed_format.as)
 ```

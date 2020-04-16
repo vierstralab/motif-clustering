@@ -1,0 +1,37 @@
+#!/bin/bash
+
+mkdir -p tomtom/height.0.70/viz
+
+base_dir=tomtom/height.0.70
+
+
+rm -rf ${base_dir}/logs && mkdir -p ${base_dir}/logs
+
+
+cat <<__SCRIPT__ > ${base_dir}/slurm.process_cluster
+#!/bin/bash
+#SBATCH --output=${base_dir}/logs/%A.%a.out
+#SBATCH --mem=16G
+#SBATCH --cpus-per-task=1
+#SBATCH --partition=queue0
+
+cluster=\${SLURM_ARRAY_TASK_ID}
+
+python2 /home/jvierstra/proj/code/motif-clustering/process_cluster.py \
+  tomtom/tomtom.all.txt \
+  tomtom/clusters.0.70.txt \
+  \${cluster} \
+  tomtom/height.0.70
+
+python2 /home/jvierstra/proj/code/motif-clustering/viz_cluster.py \
+  tomtom/height.0.70/cluster-info.\${cluster}.txt \
+  tomtom/height.0.70/cluster-motifs.\${cluster}.txt \
+  tomtom/height.0.70/viz/cluster.\${cluster}
+
+__SCRIPT__
+
+JOB0=$(sbatch --export=ALL --parsable \
+	--job-name=process_cluster.chunk \
+	--array=1-$(tail -n +2 tomtom/clusters.0.70.txt | cut -f2 | sort | uniq | wc -l) \
+	${base_dir}/slurm.process_cluster)
+echo $JOB0
