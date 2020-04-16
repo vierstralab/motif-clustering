@@ -117,3 +117,6 @@ bedToBigBed -as=bed_format.as -type=bed9+4 -tab moods.combined.all.bed chrom.siz
 awk -v OFS="\t" '{ print $1, $2, $3, $4, $11, $6, $10, $13}' moods.combined.all.bed | bgzip -c > moods.combined.all.bed.gz
 tabix -p bed moods.combined.all.bed.gz
 ```
+```
+awk -v OFS="\t" '{ print $1, $2, $3, $4, 0, $6, $5, $7 }' moods.combined.all.bed > /tmp/moods &
+```
