@@ -1,7 +1,7 @@
 # Non-redundant TF motif matches genome-wide
 
-Below describe the general workflow for clustering motif models to remove redundancy, generating an "archetype" motif, and then finally, performingg genome-wide scans of motifs and remvoval of redundancy.
-Note this documentation is  ***incomplete***, as should be used a a rough guide.
+Below describe the general workflow for clustering motif models to remove redundancy, generating an "archetype" motif, and then finally, performing genome-wide scans of motifs and remvoval of redundancy.
+Note that this documentation is  ***incomplete***, as should be used a a rough guide only.
 
 If you are looking for a the final results (motif clusters, genome-wide scans and a browser shot) please see the following website:
 https://resources.altius.org/~jvierstra/projects/motif-clustering/
@@ -124,16 +124,19 @@ string DBD;     "DNA binding domain"
 uint n; "Number of motif matches from cluster"
 )
 ```
+Make the tracks for the archetypes
 
+```
 bedToBigBed -as=bed_format.as -type=bed9+4 -tab moods.combined.all.bed chrom.sizes moods.combined.all.bb
 awk -v OFS="\t" '{ print $1, $2, $3, $4, $11, $6, $10, $13}' moods.combined.all.bed | bgzip -c > moods.combined.all.bed.gz
 tabix -p bed moods.combined.all.bed.gz
 ```
+Make the tracks for the full motif scans.
 ```
 fetchChromSizes hg38 > /tmp/chrom.sizes
 awk -v OFS="\t" '{ print $1, 0, $2; }' /tmp/chrom.sizes | sort-bed - > /tmp/chrom.sizes.bed
 bedops -e 100% moods.combined.all.bed /tmp/chrom.sizes.bed \
-| awk -v OFS="\t" '{ print $1, $2, $3, $4, 0, $6, $2, $3, "0,0,0", $5, $7 }' > /tmp/moods &
+| awk -v OFS="\t" '{ print $1, $2, $3, $4, 0, $6, $2, $3, "0,0,0", $5, $7 }' > /tmp/moods
 bedToBigBed -as=bed_format.as -type=bed9+2 -tab /tmp/moods chrom.sizes moods.combined.all.bb
 
 ```
