@@ -34,7 +34,7 @@ We have pre-computed genome-wide scans for both human and mouse genomes.
 
 ## Step 1: Compute pair-wise motif similarity
 
-Here we TOMTOM to determine the similarity between all motif models (all pairwise) with the following code:
+Here we use TOMTOM to determine the similarity between all motif models (all pairwise) with the following code:
 
 ```
 meme2meme databases/*/*.meme > tomtom/all.dbs.meme
@@ -96,7 +96,7 @@ C62:OLIG (bHLH)|  C179:RUNX (RUNX domain)
 
 ## Step 4: Scan genome using all motif models (individually) then resassign labels & coordinates
 
-I use the software package [MOODS](https://github.com/jhkorhonen/MOODS) to find motif matches genome-wide. Its a great tool and only that I highly reccomend.
+I use the software package [MOODS](https://github.com/jhkorhonen/MOODS) to find motif matches genome-wide. Its a great tool and that I highly reccomend.
 See [runall.scan_models](runall.scan_models) for an example of how to do this on a SLURM cluster.
 
 Finally, we need to translate the coordinates and motif labels for each motif match to their corresponding motif archetype (see [runall.reassign](runall.resassign)).
