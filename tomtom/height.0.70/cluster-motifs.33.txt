@@ -1,5 +1,0 @@
-RXRA_nuclearreceptor_2	GGGGTCATGACCCC	+	14	0	0	33
-RXRA_nuclearreceptor_4	GAGGTCATGACCCC	+	14	0	0	33
-RXRG_nuclearreceptor_2	GAGGTCATGACCCC	+	14	0	0	33
-RXRG_nuclearreceptor_4	GGGGTCATGACCTC	+	14	0	0	33
-Rxra.mouse_nuclearreceptor_2	GGGTCATGACCC	+	12	1	1	33

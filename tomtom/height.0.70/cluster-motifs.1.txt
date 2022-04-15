@@ -1,2 +1,0 @@
-LHX6_homeodomain_3	TGATTGCAATCA	+	12	0	0	1
-Lhx8.mouse_homeodomain_3	TGATTGCAATTA	-	12	0	0	1

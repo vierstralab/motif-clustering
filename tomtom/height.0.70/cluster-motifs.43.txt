@@ -1,5 +1,0 @@
-NR2E1_nuclearreceptor_1	AAAAGTCAA	+	9	6	0	43
-Nr2e1_MA0676.1	AAAAGTCAA	+	9	6	0	43
-Nr2e1.mouse_nuclearreceptor_1	AAAAGTCAA	+	9	6	0	43
-Nr2e1.mouse_nuclearreceptor_2	AAGTCAATAAGTCA	+	14	0	1	43
-NR2E1_nuclearreceptor_2	AAGTCAATAAGTCA	+	14	0	1	43

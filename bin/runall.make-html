@@ -1,0 +1,178 @@
+#!/bin/bash
+
+
+cat <<__HTML__ > results/index.html
+
+<html>
+
+<head>
+<title>Non-redundant TF motif clustering (v2.0beta -- human)</title>
+<style>
+    
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+    
+    
+    
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    * {
+        font-family: 'IBM Plex Mono'
+    }
+
+body {
+min-width:900px;
+}
+
+.content {
+display: grid;
+grid-template-columns: 500px auto;
+height: calc(100vh - 75px;)
+
+}
+
+.sidebar {
+ height: 100vh;
+ overflow-y: scroll;
+}
+
+.flex {
+ width: auto;
+ display: flex;
+ flex-wrap: wrap;
+width: auto;
+
+
+height: 100vh;
+overflow-y: scroll}
+
+.flex > div {
+ margin: 5px;
+ padding: 0px;
+ border: 1px solid black;
+}
+    
+.pwm > h2 {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    padding: 4px;
+}
+    
+.pwm:hover > h2 {
+    background-color: lightgrey;
+}
+
+.highlight > h2 {
+    background-color: red;
+}
+
+img{
+    display: block;
+    margin: auto;
+    padding: 4px;
+}
+      
+.flex > div > h3 {
+    border-top: 1px solid black;
+    margin: 0;
+    font-size: 10px;
+    text-align: left;
+    padding: 4px;
+}    
+    
+.header {
+    background-color: black;
+    color: white;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+    height:75px;
+    padding: 0 25px;
+}
+
+
+
+.header > h1 {
+    font-size: 16px;
+    color: gold;
+}
+
+.nav {
+    display: grid;
+                list-style: none;
+            grid-auto-flow: column;
+            gap: 0 40px;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 24px;
+}
+
+.nav > li > a {
+    color: white;
+}
+
+.nav > li > a:hover {
+    color: gold;
+}
+
+
+
+</style>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Non-redundant motif clustering (v2.0beta -- human)</h1>
+        <ul class="nav">
+            <li><a href="metadata.tsv">Motif metadata (TSV)</a></li>
+            <li><a href="tomtom/tomtom.all.txt">Pairwise similarity matrix (TSV)</a></li>
+            <li><a href="consensus_pwms.meme">Archetype models (MEME-format)</a></li>
+            <li><a href="all.dbs.meme">Individual models (MEME-format)</a></li>
+        </ul>
+    </div>
+    <div class="content">
+            <div class="sidebar">
+                <img src="clusters/AC0001.png" id="sidebar"/>
+            </div>
+                <div class="flex">
+__HTML__
+
+
+while IFS=$'\t' read -r name n; do    
+cat <<__HTML__ >> index.html
+             <div class="pwm"><h2>${name}</h2><img id="${name}" src="clusters/logos/${name}.png"/><h3>${n} motifs</h3></div>
+__HTML__
+
+done < results/clusters.txt
+
+cat <<__HTML__ >> results/index.html
+
+    </div>
+
+    </div>
+</body>
+
+<script>
+    \$('.pwm').click(function() {
+        \$('.pwm').removeClass('highlight')
+        \$(this).addClass('highlight')
+
+        \$('#sidebar').attr('src', 'clusters/' + \$(this).find('img').first().attr('id') + '.png')            
+    })
+    
+
+</script>
+
+</html>
+__HTML__

@@ -1,2 +1,0 @@
-Rhox11.mouse_homeodomain_1	CGCTGTTAA	+	9	4	4	205
-Rhox11_MA0629.1	AAGACGCTGTAAAGCGA	+	17	0	0	205

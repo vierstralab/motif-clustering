@@ -1,0 +1,2 @@
+sed 's/,/\t/g' BANP.csv | sed 's/"//g' > /tmp/pwm.txt
+taipale2meme /tmp/pwm.txt | awk '$1=="MOTIF" { $2="BANP_Grand2021" } { print; }' > BANP.meme

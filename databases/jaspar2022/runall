@@ -1,0 +1,7 @@
+
+# Used JASPAR search feature on  website to select TF in homo sapiens; likely redundant
+# Added to 'cart' and batch downloaded
+
+cat 20220412170304_JASPAR2022_combined_matrices_20949_meme.txt \
+| awk '$1=="MOTIF" { print $1, $2; next; } {print;}' \
+> 20220412170304_JASPAR2022_combined_matrices_20949_meme.meme

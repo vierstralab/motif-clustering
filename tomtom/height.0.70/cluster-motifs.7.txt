@@ -1,5 +1,0 @@
-EMX1_homeodomain_2	TAATTAGCTAATTA	+	14	0	0	7
-EMX2_homeodomain_2	TAATTAGCTAATTA	+	14	0	0	7
-EN1_homeodomain_4	TAATTAAGCAATTA	-	14	0	0	7
-EN1_homeodomain_2	TAATTGGTCAATTA	+	14	0	0	7
-GBX2_homeodomain_2	TAATTGGCCAATTA	+	14	0	0	7

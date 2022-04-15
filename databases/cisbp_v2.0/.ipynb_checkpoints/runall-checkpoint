@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# get motifs with direct measurments; see README.txt
+
+awk '$9=="D"' TF_Information.txt | cut -f4 | uniq > tfs_direct.txt
+
+pwms=`ls pwms_all_motifs/*.txt | grep -f tfs_direct.txt`
+
+rm -f all.motifs.txt
+
+for pwm in ${pwms}; do
+    id=`basename ${pwm} .txt`
+    echo ">${id}" >> all.motifs.txt
+    tail -n +2 ${pwm} | cut -f2- >> all.motifs.txt
+done
+
+chen2meme < all.motifs.txt \
+> all.motifs.meme

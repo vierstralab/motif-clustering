@@ -1,1 +1,0 @@
-THRB_nuclearreceptor_3	GTGACCTTACATAAGGTCAC	+	20	0	0	37

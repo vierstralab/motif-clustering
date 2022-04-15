@@ -7,7 +7,7 @@ strands: + -
 Background letter frequencies (from uniform background):
 A 0.25000 C 0.25000 G 0.25000 T 0.25000 
 
-MOTIF ALX3_homeodomain_2 
+MOTIF ALX3_2 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 8595 E= 0
   0.158817	  0.275993	  0.134823	  0.430367	
@@ -21,7 +21,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 8595 E= 0
   0.329736	  0.212164	  0.279964	  0.178136	
   0.350305	  0.310564	  0.190833	  0.148299	
 
-MOTIF ALX3_homeodomain_3 
+MOTIF ALX3_3 
 
 letter-probability matrix: alength= 4 w= 13 nsites= 4646 E= 0
   0.270041	  0.326229	  0.147736	  0.255994	
@@ -38,7 +38,7 @@ letter-probability matrix: alength= 4 w= 13 nsites= 4646 E= 0
   0.850608	  0.020194	  0.037297	  0.091902	
   0.315407	  0.276890	  0.196705	  0.210998	
 
-MOTIF ALX4_homeodomain_1 
+MOTIF ALX4_1 
 
 letter-probability matrix: alength= 4 w= 13 nsites= 12553 E= 0
   0.267681	  0.357899	  0.144050	  0.230369	
@@ -55,7 +55,7 @@ letter-probability matrix: alength= 4 w= 13 nsites= 12553 E= 0
   0.843762	  0.024826	  0.042838	  0.088574	
   0.315545	  0.294107	  0.195360	  0.194988	
 
-MOTIF ARX_homeodomain_1 
+MOTIF ARX_1 
 
 letter-probability matrix: alength= 4 w= 13 nsites= 8355 E= 0
   0.264560	  0.275137	  0.173383	  0.286919	
@@ -72,7 +72,7 @@ letter-probability matrix: alength= 4 w= 13 nsites= 8355 E= 0
   0.867596	  0.014170	  0.034495	  0.083740	
   0.408032	  0.178447	  0.247523	  0.165997	
 
-MOTIF Alx1.mouse_homeodomain_1 
+MOTIF Alx1_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 50660 E= 0
   0.138864	  0.266416	  0.123031	  0.471688	
@@ -86,7 +86,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 50660 E= 0
   0.360292	  0.190282	  0.314941	  0.134485	
   0.378396	  0.291925	  0.190447	  0.139233	
 
-MOTIF Alx1.mouse_homeodomain_2 
+MOTIF Alx1_2 
 
 letter-probability matrix: alength= 4 w= 13 nsites= 39315 E= 0
   0.249986	  0.329447	  0.149941	  0.270625	
@@ -103,7 +103,7 @@ letter-probability matrix: alength= 4 w= 13 nsites= 39315 E= 0
   0.892912	  0.010958	  0.025925	  0.070205	
   0.357495	  0.245126	  0.195565	  0.201813	
 
-MOTIF Alx4.mouse_homeodomain_1 
+MOTIF Alx4_1 
 
 letter-probability matrix: alength= 4 w= 13 nsites= 14220 E= 0
   0.303739	  0.291435	  0.170406	  0.234419	
@@ -120,7 +120,7 @@ letter-probability matrix: alength= 4 w= 13 nsites= 14220 E= 0
   0.850896	  0.014643	  0.038525	  0.095935	
   0.346039	  0.259509	  0.193567	  0.200885	
 
-MOTIF Arx.mouse_homeodomain_1 
+MOTIF Arx_1 
 
 letter-probability matrix: alength= 4 w= 13 nsites= 10108 E= 0
   0.268479	  0.274375	  0.185828	  0.271318	
@@ -137,7 +137,7 @@ letter-probability matrix: alength= 4 w= 13 nsites= 10108 E= 0
   0.881702	  0.013861	  0.032053	  0.072384	
   0.403821	  0.181550	  0.247052	  0.167576	
 
-MOTIF BARHL2_homeodomain_1 
+MOTIF BARHL2_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 4170 E= 0
   0.268787	  0.251900	  0.307064	  0.172249	
@@ -151,7 +151,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 4170 E= 0
   0.242049	  0.182100	  0.337180	  0.238672	
   0.195836	  0.218346	  0.134778	  0.451041	
 
-MOTIF BARHL2_homeodomain_2 
+MOTIF BARHL2_2 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 5440 E= 0
   0.215734	  0.259586	  0.317541	  0.207140	
@@ -165,7 +165,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 5440 E= 0
   0.199427	  0.365580	  0.235787	  0.199207	
   0.195417	  0.258647	  0.181978	  0.363957	
 
-MOTIF BARHL2_homeodomain_3 
+MOTIF BARHL2_3 
 
 letter-probability matrix: alength= 4 w= 16 nsites= 3686 E= 0
   0.076645	  0.020550	  0.004443	  0.898362	
@@ -185,7 +185,7 @@ letter-probability matrix: alength= 4 w= 16 nsites= 3686 E= 0
   0.092531	  0.350242	  0.082845	  0.474382	
   0.187305	  0.030177	  0.673257	  0.109261	
 
-MOTIF BARHL2_homeodomain_4 
+MOTIF BARHL2_4 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 14763 E= 0
   0.258110	  0.268378	  0.340257	  0.133256	
@@ -199,7 +199,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 14763 E= 0
   0.280513	  0.170362	  0.379385	  0.169739	
   0.168884	  0.233139	  0.099261	  0.498716	
 
-MOTIF BARHL2_homeodomain_5 
+MOTIF BARHL2_5 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 16722 E= 0
   0.176058	  0.269625	  0.354936	  0.199381	
@@ -213,7 +213,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 16722 E= 0
   0.203936	  0.318701	  0.269712	  0.207651	
   0.165073	  0.273309	  0.153100	  0.408519	
 
-MOTIF BARHL2_homeodomain_6 
+MOTIF BARHL2_6 
 
 letter-probability matrix: alength= 4 w= 16 nsites= 18492 E= 0
   0.046562	  0.015503	  0.007071	  0.930864	
@@ -233,7 +233,7 @@ letter-probability matrix: alength= 4 w= 16 nsites= 18492 E= 0
   0.061775	  0.378227	  0.056572	  0.503426	
   0.129857	  0.013187	  0.800234	  0.056722	
 
-MOTIF BARX1_homeodomain_1 
+MOTIF BARX1_1 
 
 letter-probability matrix: alength= 4 w= 17 nsites= 2361 E= 0
   0.128716	  0.570947	  0.075084	  0.225253	
@@ -254,7 +254,7 @@ letter-probability matrix: alength= 4 w= 17 nsites= 2361 E= 0
   0.010909	  0.033636	  0.002273	  0.953182	
   0.900290	  0.006292	  0.017425	  0.075992	
 
-MOTIF BARX1_homeodomain_2 
+MOTIF BARX1_2 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 6959 E= 0
   0.275051	  0.267558	  0.328534	  0.128857	
@@ -266,7 +266,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 6959 E= 0
   1.000000	  0.000000	  0.000000	  0.000000	
   0.281705	  0.204409	  0.355621	  0.158266	
 
-MOTIF BSX_homeodomain_1 
+MOTIF BSX_1 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 9110 E= 0
   0.164062	  0.444860	  0.259284	  0.131793	
@@ -278,7 +278,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 9110 E= 0
   1.000000	  0.000000	  0.000000	  0.000000	
   0.313632	  0.268229	  0.273664	  0.144475	
 
-MOTIF Barhl1.mouse_homeodomain_1 
+MOTIF Barhl1_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 6991 E= 0
   0.250806	  0.281181	  0.310708	  0.157305	
@@ -292,7 +292,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 6991 E= 0
   0.232010	  0.236422	  0.338595	  0.192974	
   0.159369	  0.263069	  0.104039	  0.473523	
 
-MOTIF Barhl1.mouse_homeodomain_2 
+MOTIF Barhl1_2 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 7778 E= 0
   0.193806	  0.259100	  0.338921	  0.208174	
@@ -306,7 +306,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 7778 E= 0
   0.181354	  0.327746	  0.293582	  0.197318	
   0.157223	  0.280926	  0.190742	  0.371109	
 
-MOTIF Barhl1.mouse_homeodomain_3 
+MOTIF Barhl1_3 
 
 letter-probability matrix: alength= 4 w= 16 nsites= 4549 E= 0
   0.043329	  0.005961	  0.000229	  0.950481	
@@ -326,7 +326,7 @@ letter-probability matrix: alength= 4 w= 16 nsites= 4549 E= 0
   0.068980	  0.389448	  0.079860	  0.461712	
   0.154647	  0.018623	  0.756984	  0.069746	
 
-MOTIF CART1_homeodomain_1 
+MOTIF CART1_1 
 
 letter-probability matrix: alength= 4 w= 13 nsites= 5603 E= 0
   0.253053	  0.256053	  0.208914	  0.281980	
@@ -343,7 +343,7 @@ letter-probability matrix: alength= 4 w= 13 nsites= 5603 E= 0
   0.769370	  0.020772	  0.083416	  0.126442	
   0.313759	  0.215388	  0.257394	  0.213459	
 
-MOTIF CDX1_homeodomain_1 
+MOTIF CDX1_1 
 
 letter-probability matrix: alength= 4 w= 9 nsites= 10008 E= 0
   0.241104	  0.167889	  0.529545	  0.061462	
@@ -356,7 +356,7 @@ letter-probability matrix: alength= 4 w= 9 nsites= 10008 E= 0
   0.869084	  0.045919	  0.023990	  0.061006	
   0.501402	  0.188376	  0.135540	  0.174682	
 
-MOTIF CDX2_homeodomain_1 
+MOTIF CDX2_1 
 
 letter-probability matrix: alength= 4 w= 9 nsites= 2330 E= 0
   0.230595	  0.184748	  0.538357	  0.046300	
@@ -369,7 +369,7 @@ letter-probability matrix: alength= 4 w= 9 nsites= 2330 E= 0
   0.923303	  0.019698	  0.021375	  0.035624	
   0.559437	  0.206443	  0.102541	  0.131579	
 
-MOTIF DLX1_homeodomain_1 
+MOTIF DLX1_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 9173 E= 0
   0.256370	  0.341142	  0.219056	  0.183432	
@@ -383,7 +383,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 9173 E= 0
   0.214225	  0.228716	  0.250815	  0.306243	
   0.194807	  0.377536	  0.228623	  0.199034	
 
-MOTIF DLX2_homeodomain_1 
+MOTIF DLX2_1 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 20019 E= 0
   0.225210	  0.335726	  0.265403	  0.173660	
@@ -395,7 +395,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 20019 E= 0
   0.816509	  0.033296	  0.023207	  0.126988	
   0.264564	  0.309756	  0.199423	  0.226256	
 
-MOTIF DLX3_homeodomain_1 
+MOTIF DLX3_1 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 8140 E= 0
   0.231767	  0.319312	  0.283939	  0.164982	
@@ -407,7 +407,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 8140 E= 0
   0.880486	  0.024288	  0.012144	  0.083083	
   0.276799	  0.291001	  0.185170	  0.247030	
 
-MOTIF DLX4_homeodomain_1 
+MOTIF DLX4_1 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 13170 E= 0
   0.218747	  0.325840	  0.305185	  0.150228	
@@ -419,7 +419,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 13170 E= 0
   0.884308	  0.023182	  0.009831	  0.082679	
   0.254294	  0.307226	  0.189662	  0.248818	
 
-MOTIF DLX5_homeodomain_1 
+MOTIF DLX5_1 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 4636 E= 0
   0.255490	  0.265880	  0.278867	  0.199764	
@@ -431,7 +431,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 4636 E= 0
   0.913503	  0.011432	  0.009707	  0.065358	
   0.258385	  0.263817	  0.172414	  0.305385	
 
-MOTIF DLX6_homeodomain_1 
+MOTIF DLX6_1 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 2803 E= 0
   0.229596	  0.352784	  0.259344	  0.158276	
@@ -443,7 +443,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 2803 E= 0
   0.916492	  0.010482	  0.005590	  0.067435	
   0.268014	  0.313763	  0.180328	  0.237896	
 
-MOTIF DMBX1_homeodomain_1 
+MOTIF DMBX1_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 7504 E= 0
   0.272343	  0.154589	  0.335296	  0.237772	
@@ -457,7 +457,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 7504 E= 0
   0.384569	  0.096784	  0.322361	  0.196286	
   0.185140	  0.301571	  0.274690	  0.238599	
 
-MOTIF DPRX_homeodomain_1 
+MOTIF DPRX_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 8135 E= 0
   0.319910	  0.200225	  0.304844	  0.175021	
@@ -471,7 +471,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 8135 E= 0
   0.267005	  0.107309	  0.323616	  0.302070	
   0.143481	  0.443678	  0.233033	  0.179809	
 
-MOTIF DPRX_homeodomain_2 
+MOTIF DPRX_2 
 
 letter-probability matrix: alength= 4 w= 11 nsites= 4350 E= 0
   0.230098	  0.293573	  0.325311	  0.151018	
@@ -486,7 +486,7 @@ letter-probability matrix: alength= 4 w= 11 nsites= 4350 E= 0
   0.061322	  0.593005	  0.079718	  0.265955	
   0.170016	  0.314384	  0.299841	  0.215759	
 
-MOTIF DRGX_homeodomain_1 
+MOTIF DRGX_1 
 
 letter-probability matrix: alength= 4 w= 13 nsites= 8429 E= 0
   0.257997	  0.306437	  0.179788	  0.255778	
@@ -503,7 +503,7 @@ letter-probability matrix: alength= 4 w= 13 nsites= 8429 E= 0
   0.862290	  0.011373	  0.037946	  0.088391	
   0.308084	  0.237299	  0.230900	  0.223717	
 
-MOTIF DUXA_homeodomain_1 
+MOTIF DUXA_1 
 
 letter-probability matrix: alength= 4 w= 13 nsites= 1157 E= 0
   0.220907	  0.308679	  0.191321	  0.279093	
@@ -520,7 +520,7 @@ letter-probability matrix: alength= 4 w= 13 nsites= 1157 E= 0
   0.854254	  0.024431	  0.043808	  0.077506	
   0.358974	  0.175542	  0.279093	  0.186391	
 
-MOTIF Dlx1.mouse_homeodomain_1 
+MOTIF Dlx1_1 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 10122 E= 0
   0.249973	  0.293072	  0.279983	  0.176971	
@@ -532,7 +532,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 10122 E= 0
   0.910386	  0.013951	  0.007654	  0.068010	
   0.265908	  0.301128	  0.187061	  0.245903	
 
-MOTIF Dlx2.mouse_homeodomain_1 
+MOTIF Dlx2_1 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 14343 E= 0
   0.230562	  0.259292	  0.344680	  0.165467	
@@ -544,7 +544,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 14343 E= 0
   0.952873	  0.003188	  0.003812	  0.040128	
   0.269838	  0.238345	  0.222925	  0.268892	
 
-MOTIF EMX1_homeodomain_1 
+MOTIF EMX1_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 10139 E= 0
   0.279057	  0.257633	  0.306481	  0.156829	
@@ -558,7 +558,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 10139 E= 0
   0.250643	  0.247215	  0.383355	  0.118787	
   0.174700	  0.397601	  0.237575	  0.190124	
 
-MOTIF EMX1_homeodomain_2 
+MOTIF EMX1_2 
 
 letter-probability matrix: alength= 4 w= 14 nsites= 1810 E= 0
   0.099946	  0.337990	  0.045137	  0.516926	
@@ -576,7 +576,7 @@ letter-probability matrix: alength= 4 w= 14 nsites= 1810 E= 0
   0.106338	  0.060241	  0.299633	  0.533787	
   0.623668	  0.035334	  0.268648	  0.072350	
 
-MOTIF EMX2_homeodomain_1 
+MOTIF EMX2_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 38433 E= 0
   0.281225	  0.225753	  0.343567	  0.149455	
@@ -590,7 +590,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 38433 E= 0
   0.245257	  0.191182	  0.474251	  0.089311	
   0.160217	  0.350330	  0.273603	  0.215850	
 
-MOTIF EMX2_homeodomain_2 
+MOTIF EMX2_2 
 
 letter-probability matrix: alength= 4 w= 14 nsites= 3844 E= 0
   0.137784	  0.216304	  0.072268	  0.573643	
@@ -608,7 +608,7 @@ letter-probability matrix: alength= 4 w= 14 nsites= 3844 E= 0
   0.143147	  0.055076	  0.292640	  0.509137	
   0.592091	  0.057856	  0.246285	  0.103769	
 
-MOTIF EN1_homeodomain_1 
+MOTIF EN1_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 3503 E= 0
   0.275904	  0.303859	  0.298086	  0.122151	
@@ -622,7 +622,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 3503 E= 0
   0.283500	  0.203586	  0.367973	  0.144941	
   0.150106	  0.384686	  0.236402	  0.228806	
 
-MOTIF EN1_homeodomain_2 
+MOTIF EN1_2 
 
 letter-probability matrix: alength= 4 w= 14 nsites= 1271 E= 0
   0.042584	  0.019824	  0.013950	  0.923642	
@@ -640,7 +640,7 @@ letter-probability matrix: alength= 4 w= 14 nsites= 1271 E= 0
   0.076433	  0.064402	  0.007785	  0.851380	
   0.859663	  0.022454	  0.039294	  0.078589	
 
-MOTIF EN1_homeodomain_3 
+MOTIF EN1_3 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 3037 E= 0
   0.147700	  0.406088	  0.264614	  0.181598	
@@ -652,7 +652,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 3037 E= 0
   0.946937	  0.000000	  0.009826	  0.043236	
   0.238408	  0.236332	  0.420761	  0.104498	
 
-MOTIF EN1_homeodomain_4 
+MOTIF EN1_4 
 
 letter-probability matrix: alength= 4 w= 14 nsites= 545 E= 0
   0.063752	  0.083789	  0.061931	  0.790528	
@@ -670,7 +670,7 @@ letter-probability matrix: alength= 4 w= 14 nsites= 545 E= 0
   0.123077	  0.087179	  0.114530	  0.675214	
   0.689109	  0.041584	  0.158416	  0.110891	
 
-MOTIF EN2_homeodomain_1 
+MOTIF EN2_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 691 E= 0
   0.285068	  0.260935	  0.146305	  0.307692	
@@ -684,7 +684,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 691 E= 0
   0.348416	  0.232278	  0.214178	  0.205128	
   0.195783	  0.390060	  0.209337	  0.204819	
 
-MOTIF EN2_homeodomain_2 
+MOTIF EN2_2 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 1782 E= 0
   0.244080	  0.342441	  0.276867	  0.136612	
@@ -698,7 +698,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 1782 E= 0
   0.212379	  0.297937	  0.382282	  0.107403	
   0.109830	  0.429612	  0.288835	  0.171723	
 
-MOTIF ESX1_homeodomain_1 
+MOTIF ESX1_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 35702 E= 0
   0.289005	  0.279001	  0.245564	  0.186429	
@@ -712,7 +712,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 35702 E= 0
   0.288026	  0.259667	  0.274382	  0.177925	
   0.195026	  0.414586	  0.195454	  0.194934	
 
-MOTIF ESX1_homeodomain_2 
+MOTIF ESX1_2 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 38754 E= 0
   0.299377	  0.228863	  0.266253	  0.205508	
@@ -726,7 +726,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 38754 E= 0
   0.338686	  0.215002	  0.286613	  0.159700	
   0.212952	  0.409370	  0.174915	  0.202762	
 
-MOTIF EVX1_homeodomain_1 
+MOTIF EVX1_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 8512 E= 0
   0.248163	  0.228781	  0.391690	  0.131366	
@@ -740,7 +740,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 8512 E= 0
   0.168862	  0.265771	  0.344565	  0.220801	
   0.181404	  0.420319	  0.248036	  0.150241	
 
-MOTIF EVX2_homeodomain_1 
+MOTIF EVX2_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 21890 E= 0
   0.216014	  0.250392	  0.382664	  0.150930	
@@ -754,7 +754,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 21890 E= 0
   0.200304	  0.237916	  0.381458	  0.180322	
   0.185015	  0.377816	  0.244711	  0.192458	
 
-MOTIF En2.mouse_homeodomain_1 
+MOTIF En2_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 346 E= 0
   0.200000	  0.296970	  0.339394	  0.163636	
@@ -768,7 +768,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 346 E= 0
   0.235650	  0.196375	  0.447130	  0.120846	
   0.084848	  0.372727	  0.269697	  0.272727	
 
-MOTIF GBX1_homeodomain_1 
+MOTIF GBX1_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 27693 E= 0
   0.365801	  0.246050	  0.286686	  0.101463	
@@ -782,7 +782,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 27693 E= 0
   0.209225	  0.233257	  0.446359	  0.111160	
   0.128973	  0.428582	  0.199020	  0.243425	
 
-MOTIF GBX2_homeodomain_1 
+MOTIF GBX2_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 27920 E= 0
   0.377622	  0.188080	  0.297632	  0.136666	
@@ -796,7 +796,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 27920 E= 0
   0.300946	  0.164505	  0.388716	  0.145833	
   0.196923	  0.334685	  0.258532	  0.209859	
 
-MOTIF GBX2_homeodomain_2 
+MOTIF GBX2_2 
 
 letter-probability matrix: alength= 4 w= 14 nsites= 6155 E= 0
   0.034663	  0.089971	  0.005700	  0.869666	
@@ -814,7 +814,7 @@ letter-probability matrix: alength= 4 w= 14 nsites= 6155 E= 0
   0.177537	  0.019695	  0.020123	  0.782646	
   0.886261	  0.004731	  0.063143	  0.045866	
 
-MOTIF GBX2_homeodomain_3 
+MOTIF GBX2_3 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 3290 E= 0
   0.306591	  0.261651	  0.254993	  0.176764	
@@ -828,7 +828,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 3290 E= 0
   0.289710	  0.242091	  0.309024	  0.159174	
   0.203130	  0.381951	  0.227439	  0.187479	
 
-MOTIF GSC2_homeodomain_1 
+MOTIF GSC2_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 2263 E= 0
   0.228671	  0.340278	  0.219246	  0.211806	
@@ -842,7 +842,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 2263 E= 0
   0.101737	  0.331514	  0.346402	  0.220347	
   0.252480	  0.403770	  0.083333	  0.260417	
 
-MOTIF GSC_homeodomain_1 
+MOTIF GSC_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 6527 E= 0
   0.205360	  0.314370	  0.335252	  0.145018	
@@ -856,7 +856,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 6527 E= 0
   0.137477	  0.394343	  0.284822	  0.183358	
   0.180398	  0.361289	  0.101792	  0.356520	
 
-MOTIF GSX1_homeodomain_1 
+MOTIF GSX1_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 1302 E= 0
   0.279797	  0.330516	  0.176669	  0.213018	
@@ -870,7 +870,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 1302 E= 0
   0.378698	  0.210482	  0.264582	  0.146238	
   0.295608	  0.257601	  0.180743	  0.266047	
 
-MOTIF GSX2_homeodomain_1 
+MOTIF GSX2_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 10454 E= 0
   0.298244	  0.259649	  0.219056	  0.223052	
@@ -884,7 +884,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 10454 E= 0
   0.462558	  0.172697	  0.235065	  0.129680	
   0.377366	  0.240639	  0.161443	  0.220551	
 
-MOTIF Gbx1.mouse_homeodomain_1 
+MOTIF Gbx1_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 43559 E= 0
   0.311976	  0.236259	  0.271141	  0.180625	
@@ -898,7 +898,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 43559 E= 0
   0.328217	  0.211926	  0.324894	  0.134964	
   0.218453	  0.344092	  0.260556	  0.176900	
 
-MOTIF Gbx2.mouse_homeodomain_1 
+MOTIF Gbx2_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 4964 E= 0
   0.417835	  0.175215	  0.261042	  0.145907	
@@ -912,7 +912,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 4964 E= 0
   0.298514	  0.191124	  0.351476	  0.158886	
   0.191374	  0.301508	  0.264028	  0.243090	
 
-MOTIF HESX1_homeodomain_1 
+MOTIF HESX1_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 4120 E= 0
   0.204127	  0.184967	  0.428150	  0.182756	
@@ -926,7 +926,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 4120 E= 0
   0.305822	  0.189634	  0.412921	  0.091624	
   0.196709	  0.393173	  0.113212	  0.296906	
 
-MOTIF HESX1_homeodomain_2 
+MOTIF HESX1_2 
 
 letter-probability matrix: alength= 4 w= 15 nsites= 1329 E= 0
   0.186131	  0.344526	  0.133577	  0.335766	
@@ -945,7 +945,7 @@ letter-probability matrix: alength= 4 w= 15 nsites= 1329 E= 0
   0.953376	  0.001608	  0.019293	  0.025723	
   0.363146	  0.076330	  0.320740	  0.239784	
 
-MOTIF HMBOX1_homeodomain_1 
+MOTIF HMBOX1_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 1397 E= 0
   0.395613	  0.364744	  0.157595	  0.082047	
@@ -959,7 +959,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 1397 E= 0
   0.501666	  0.318454	  0.086609	  0.093271	
   0.164094	  0.440292	  0.300569	  0.095045	
 
-MOTIF HMX1_homeodomain_1 
+MOTIF HMX1_1 
 
 letter-probability matrix: alength= 4 w= 11 nsites= 1452 E= 0
   0.621560	  0.097859	  0.167431	  0.113150	
@@ -974,7 +974,7 @@ letter-probability matrix: alength= 4 w= 11 nsites= 1452 E= 0
   0.355777	  0.241775	  0.165264	  0.237184	
   0.362940	  0.186064	  0.209801	  0.241194	
 
-MOTIF HMX2_homeodomain_1 
+MOTIF HMX2_1 
 
 letter-probability matrix: alength= 4 w= 11 nsites= 2674 E= 0
   0.542205	  0.129630	  0.187769	  0.140396	
@@ -989,7 +989,7 @@ letter-probability matrix: alength= 4 w= 11 nsites= 2674 E= 0
   0.358742	  0.301464	  0.159345	  0.180448	
   0.390013	  0.195867	  0.205338	  0.208782	
 
-MOTIF HMX3_homeodomain_1 
+MOTIF HMX3_1 
 
 letter-probability matrix: alength= 4 w= 11 nsites= 9055 E= 0
   0.446195	  0.142555	  0.252151	  0.159100	
@@ -1004,7 +1004,7 @@ letter-probability matrix: alength= 4 w= 11 nsites= 9055 E= 0
   0.290762	  0.355347	  0.173504	  0.180386	
   0.328834	  0.235146	  0.307132	  0.128887	
 
-MOTIF HNF1A_homeodomain_1 
+MOTIF HNF1A_1 
 
 letter-probability matrix: alength= 4 w= 15 nsites= 15687 E= 0
   0.368153	  0.172521	  0.246661	  0.212665	
@@ -1023,7 +1023,7 @@ letter-probability matrix: alength= 4 w= 15 nsites= 15687 E= 0
   0.086481	  0.822329	  0.038068	  0.053121	
   0.280727	  0.242208	  0.160789	  0.316277	
 
-MOTIF HNF1B_homeodomain_1 
+MOTIF HNF1B_1 
 
 letter-probability matrix: alength= 4 w= 13 nsites= 34318 E= 0
   0.043626	  0.029408	  0.880485	  0.046481	
@@ -1040,7 +1040,7 @@ letter-probability matrix: alength= 4 w= 13 nsites= 34318 E= 0
   0.888809	  0.042424	  0.057065	  0.011701	
   0.053668	  0.513117	  0.021737	  0.411477	
 
-MOTIF HNF1B_homeodomain_2 
+MOTIF HNF1B_2 
 
 letter-probability matrix: alength= 4 w= 15 nsites= 26130 E= 0
   0.369803	  0.184796	  0.243931	  0.201470	
@@ -1059,7 +1059,7 @@ letter-probability matrix: alength= 4 w= 15 nsites= 26130 E= 0
   0.063817	  0.865351	  0.027693	  0.043139	
   0.261907	  0.283620	  0.156951	  0.297522	
 
-MOTIF HOXA10_homeodomain_1 
+MOTIF HOXA10_1 
 
 letter-probability matrix: alength= 4 w= 12 nsites= 5481 E= 0
   0.295966	  0.177179	  0.333853	  0.193002	
@@ -1075,7 +1075,7 @@ letter-probability matrix: alength= 4 w= 12 nsites= 5481 E= 0
   0.307418	  0.232346	  0.160392	  0.299844	
   0.268939	  0.204100	  0.212344	  0.314617	
 
-MOTIF HOXA10_homeodomain_2 
+MOTIF HOXA10_2 
 
 letter-probability matrix: alength= 4 w= 11 nsites= 10333 E= 0
   0.276187	  0.169769	  0.357075	  0.196970	
@@ -1090,7 +1090,7 @@ letter-probability matrix: alength= 4 w= 11 nsites= 10333 E= 0
   0.595199	  0.147859	  0.110788	  0.146154	
   0.359981	  0.249254	  0.146761	  0.244004	
 
-MOTIF HOXA13_homeodomain_1 
+MOTIF HOXA13_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 677 E= 0
   0.121485	  0.580427	  0.196850	  0.101237	
@@ -1104,7 +1104,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 677 E= 0
   0.588369	  0.199544	  0.076397	  0.135690	
   0.315280	  0.367505	  0.083172	  0.234043	
 
-MOTIF HOXA13_homeodomain_2 
+MOTIF HOXA13_2 
 
 letter-probability matrix: alength= 4 w= 11 nsites= 1006 E= 0
   0.129989	  0.326112	  0.354618	  0.189282	
@@ -1119,7 +1119,7 @@ letter-probability matrix: alength= 4 w= 11 nsites= 1006 E= 0
   0.605935	  0.158730	  0.063492	  0.171843	
   0.318907	  0.326879	  0.132118	  0.222096	
 
-MOTIF HOXA13_homeodomain_3 
+MOTIF HOXA13_3 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 308 E= 0
   0.161458	  0.643229	  0.184896	  0.010417	
@@ -1133,7 +1133,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 308 E= 0
   0.641558	  0.155844	  0.114286	  0.088312	
   0.421053	  0.291498	  0.093117	  0.194332	
 
-MOTIF HOXA13_homeodomain_4 
+MOTIF HOXA13_4 
 
 letter-probability matrix: alength= 4 w= 11 nsites= 328 E= 0
   0.276667	  0.140000	  0.183333	  0.400000	
@@ -1148,7 +1148,7 @@ letter-probability matrix: alength= 4 w= 11 nsites= 328 E= 0
   0.751880	  0.025063	  0.077694	  0.145363	
   0.413333	  0.260000	  0.106667	  0.220000	
 
-MOTIF HOXA1_homeodomain_1 
+MOTIF HOXA1_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 6195 E= 0
   0.309002	  0.194126	  0.322037	  0.174835	
@@ -1162,7 +1162,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 6195 E= 0
   0.329684	  0.236184	  0.306222	  0.127911	
   0.221064	  0.356448	  0.253389	  0.169100	
 
-MOTIF HOXA2_homeodomain_1 
+MOTIF HOXA2_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 9492 E= 0
   0.244380	  0.291453	  0.263744	  0.200423	
@@ -1176,7 +1176,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 9492 E= 0
   0.243517	  0.317084	  0.316082	  0.123317	
   0.182506	  0.421322	  0.227020	  0.169152	
 
-MOTIF HOXB13_homeodomain_1 
+MOTIF HOXB13_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 3282 E= 0
   0.074124	  0.744180	  0.138614	  0.043083	
@@ -1190,7 +1190,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 3282 E= 0
   0.723465	  0.143080	  0.043704	  0.089750	
   0.355268	  0.364617	  0.069040	  0.211075	
 
-MOTIF HOXB13_homeodomain_2 
+MOTIF HOXB13_2 
 
 letter-probability matrix: alength= 4 w= 11 nsites= 2665 E= 0
   0.116191	  0.361158	  0.361577	  0.161074	
@@ -1205,7 +1205,7 @@ letter-probability matrix: alength= 4 w= 11 nsites= 2665 E= 0
   0.669663	  0.133146	  0.060674	  0.136517	
   0.342282	  0.312500	  0.076342	  0.268876	
 
-MOTIF HOXB2_homeodomain_1 
+MOTIF HOXB2_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 7162 E= 0
   0.282570	  0.225367	  0.267296	  0.224768	
@@ -1219,7 +1219,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 7162 E= 0
   0.324599	  0.195987	  0.313071	  0.166342	
   0.239707	  0.321306	  0.236712	  0.202276	
 
-MOTIF HOXB3_homeodomain_1 
+MOTIF HOXB3_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 13642 E= 0
   0.348864	  0.195829	  0.244283	  0.211024	
@@ -1233,7 +1233,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 13642 E= 0
   0.352120	  0.164276	  0.366850	  0.116753	
   0.248004	  0.309714	  0.231103	  0.211179	
 
-MOTIF HOXB5_homeodomain_1 
+MOTIF HOXB5_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 988 E= 0
   0.357303	  0.191011	  0.264045	  0.187640	
@@ -1247,7 +1247,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 988 E= 0
   0.370079	  0.166479	  0.258718	  0.204724	
   0.260674	  0.222472	  0.260674	  0.256180	
 
-MOTIF HOXC10_homeodomain_1 
+MOTIF HOXC10_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 3361 E= 0
   0.229881	  0.384003	  0.286457	  0.099659	
@@ -1261,7 +1261,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 3361 E= 0
   0.656658	  0.153183	  0.065888	  0.124270	
   0.418959	  0.264917	  0.076598	  0.239526	
 
-MOTIF HOXC10_homeodomain_2 
+MOTIF HOXC10_2 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 5189 E= 0
   0.161830	  0.201945	  0.570582	  0.065644	
@@ -1275,7 +1275,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 5189 E= 0
   0.587729	  0.133980	  0.132415	  0.145876	
   0.384554	  0.212517	  0.146205	  0.256724	
 
-MOTIF HOXC10_homeodomain_3 
+MOTIF HOXC10_3 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 4073 E= 0
   0.259324	  0.181093	  0.556982	  0.002602	
@@ -1289,7 +1289,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 4073 E= 0
   0.598732	  0.102741	  0.099198	  0.199329	
   0.307597	  0.211395	  0.141034	  0.339975	
 
-MOTIF HOXC11_homeodomain_1 
+MOTIF HOXC11_1 
 
 letter-probability matrix: alength= 4 w= 11 nsites= 6221 E= 0
   0.313037	  0.123927	  0.362412	  0.200625	
@@ -1304,7 +1304,7 @@ letter-probability matrix: alength= 4 w= 11 nsites= 6221 E= 0
   0.592233	  0.119394	  0.084605	  0.203768	
   0.323575	  0.209602	  0.131538	  0.335285	
 
-MOTIF HOXC11_homeodomain_2 
+MOTIF HOXC11_2 
 
 letter-probability matrix: alength= 4 w= 11 nsites= 7250 E= 0
   0.382692	  0.112963	  0.303245	  0.201099	
@@ -1319,7 +1319,7 @@ letter-probability matrix: alength= 4 w= 11 nsites= 7250 E= 0
   0.628371	  0.120348	  0.085692	  0.165589	
   0.363894	  0.230360	  0.147367	  0.258379	
 
-MOTIF HOXC11_homeodomain_3 
+MOTIF HOXC11_3 
 
 letter-probability matrix: alength= 4 w= 11 nsites= 2824 E= 0
   0.277755	  0.105734	  0.451403	  0.165108	
@@ -1334,7 +1334,7 @@ letter-probability matrix: alength= 4 w= 11 nsites= 2824 E= 0
   0.623416	  0.109225	  0.070705	  0.196655	
   0.287398	  0.255285	  0.156098	  0.301220	
 
-MOTIF HOXC11_homeodomain_4 
+MOTIF HOXC11_4 
 
 letter-probability matrix: alength= 4 w= 11 nsites= 1290 E= 0
   0.376102	  0.134182	  0.329089	  0.160627	
@@ -1349,7 +1349,7 @@ letter-probability matrix: alength= 4 w= 11 nsites= 1290 E= 0
   0.663849	  0.140442	  0.050065	  0.145644	
   0.373777	  0.260274	  0.173190	  0.192759	
 
-MOTIF HOXC12_homeodomain_1 
+MOTIF HOXC12_1 
 
 letter-probability matrix: alength= 4 w= 9 nsites= 4085 E= 0
   0.181119	  0.117285	  0.665064	  0.036531	
@@ -1362,7 +1362,7 @@ letter-probability matrix: alength= 4 w= 9 nsites= 4085 E= 0
   0.973543	  0.011258	  0.001689	  0.013510	
   0.778879	  0.085791	  0.055618	  0.079712	
 
-MOTIF HOXC12_homeodomain_2 
+MOTIF HOXC12_2 
 
 letter-probability matrix: alength= 4 w= 11 nsites= 4739 E= 0
   0.337366	  0.060261	  0.505351	  0.097022	
@@ -1377,7 +1377,7 @@ letter-probability matrix: alength= 4 w= 11 nsites= 4739 E= 0
   0.751618	  0.111247	  0.047053	  0.090082	
   0.335583	  0.265069	  0.086572	  0.312776	
 
-MOTIF HOXC13_homeodomain_1 
+MOTIF HOXC13_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 764 E= 0
   0.087500	  0.661458	  0.196875	  0.054167	
@@ -1391,7 +1391,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 764 E= 0
   0.798742	  0.064151	  0.051572	  0.085535	
   0.360630	  0.278740	  0.127559	  0.233071	
 
-MOTIF HOXC13_homeodomain_2 
+MOTIF HOXC13_2 
 
 letter-probability matrix: alength= 4 w= 11 nsites= 1368 E= 0
   0.131265	  0.229117	  0.393795	  0.245823	
@@ -1406,7 +1406,7 @@ letter-probability matrix: alength= 4 w= 11 nsites= 1368 E= 0
   0.729118	  0.100348	  0.051624	  0.118910	
   0.309713	  0.285032	  0.117038	  0.288217	
 
-MOTIF HOXD11_homeodomain_1 
+MOTIF HOXD11_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 274 E= 0
   0.310680	  0.131068	  0.558252	  0.000000	
@@ -1420,7 +1420,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 274 E= 0
   0.642458	  0.081006	  0.078212	  0.198324	
   0.380952	  0.220779	  0.099567	  0.298701	
 
-MOTIF HOXD11_homeodomain_2 
+MOTIF HOXD11_2 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 147 E= 0
   0.323810	  0.057143	  0.419048	  0.200000	
@@ -1434,7 +1434,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 147 E= 0
   0.889831	  0.025424	  0.042373	  0.042373	
   0.640244	  0.134146	  0.128049	  0.097561	
 
-MOTIF HOXD12_homeodomain_1 
+MOTIF HOXD12_1 
 
 letter-probability matrix: alength= 4 w= 9 nsites= 1290 E= 0
   0.096594	  0.192570	  0.638390	  0.072446	
@@ -1447,7 +1447,7 @@ letter-probability matrix: alength= 4 w= 9 nsites= 1290 E= 0
   0.916444	  0.045333	  0.015111	  0.023111	
   0.755311	  0.081319	  0.079853	  0.083516	
 
-MOTIF HOXD12_homeodomain_2 
+MOTIF HOXD12_2 
 
 letter-probability matrix: alength= 4 w= 11 nsites= 1549 E= 0
   0.460132	  0.113387	  0.384053	  0.042429	
@@ -1462,7 +1462,7 @@ letter-probability matrix: alength= 4 w= 11 nsites= 1549 E= 0
   0.713093	  0.096505	  0.025039	  0.165363	
   0.393275	  0.352339	  0.056287	  0.198099	
 
-MOTIF HOXD13_homeodomain_1 
+MOTIF HOXD13_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 808 E= 0
   0.045998	  0.632935	  0.270469	  0.050598	
@@ -1476,7 +1476,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 808 E= 0
   0.806565	  0.087925	  0.039859	  0.065651	
   0.353198	  0.300872	  0.106105	  0.239826	
 
-MOTIF HOXD13_homeodomain_2 
+MOTIF HOXD13_2 
 
 letter-probability matrix: alength= 4 w= 11 nsites= 977 E= 0
   0.057842	  0.215795	  0.548387	  0.177976	
@@ -1491,7 +1491,7 @@ letter-probability matrix: alength= 4 w= 11 nsites= 977 E= 0
   0.751672	  0.120401	  0.037625	  0.090301	
   0.294772	  0.324805	  0.068966	  0.311457	
 
-MOTIF HOXD8_homeodomain_1 
+MOTIF HOXD8_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 910 E= 0
   0.353933	  0.217697	  0.396067	  0.032303	
@@ -1505,7 +1505,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 910 E= 0
   0.365682	  0.082982	  0.371308	  0.180028	
   0.230337	  0.401685	  0.195225	  0.172753	
 
-MOTIF Hoxa11.mouse_homeodomain_1 
+MOTIF Hoxa11_1 
 
 letter-probability matrix: alength= 4 w= 12 nsites= 832 E= 0
   0.252841	  0.153409	  0.436080	  0.157670	
@@ -1521,7 +1521,7 @@ letter-probability matrix: alength= 4 w= 12 nsites= 832 E= 0
   0.254261	  0.232955	  0.213068	  0.299716	
   0.197443	  0.156250	  0.159091	  0.487216	
 
-MOTIF Hoxa11.mouse_homeodomain_2 
+MOTIF Hoxa11_2 
 
 letter-probability matrix: alength= 4 w= 11 nsites= 548 E= 0
   0.252475	  0.185644	  0.396040	  0.165842	
@@ -1536,7 +1536,7 @@ letter-probability matrix: alength= 4 w= 11 nsites= 548 E= 0
   0.569014	  0.192958	  0.107042	  0.130986	
   0.282178	  0.252475	  0.178218	  0.287129	
 
-MOTIF Hoxa2.mouse_homeodomain_1 
+MOTIF Hoxa2_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 24613 E= 0
   0.316543	  0.230962	  0.255850	  0.196645	
@@ -1550,7 +1550,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 24613 E= 0
   0.264588	  0.280472	  0.292789	  0.162151	
   0.221033	  0.375042	  0.174652	  0.229273	
 
-MOTIF Hoxc10.mouse_homeodomain_1 
+MOTIF Hoxc10_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 972 E= 0
   0.237829	  0.133280	  0.628891	  0.000000	
@@ -1564,7 +1564,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 972 E= 0
   0.713122	  0.090498	  0.054299	  0.142081	
   0.470812	  0.203046	  0.063452	  0.262690	
 
-MOTIF Hoxc10.mouse_homeodomain_2 
+MOTIF Hoxc10_2 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 4012 E= 0
   0.162188	  0.113017	  0.661330	  0.063465	
@@ -1578,7 +1578,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 4012 E= 0
   0.762135	  0.073578	  0.064573	  0.099714	
   0.473912	  0.205823	  0.104353	  0.215912	
 
-MOTIF Hoxd13.mouse_homeodomain_1 
+MOTIF Hoxd13_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 2742 E= 0
   0.078391	  0.543063	  0.316400	  0.062145	
@@ -1592,7 +1592,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 2742 E= 0
   0.644037	  0.177982	  0.050459	  0.127523	
   0.346464	  0.303749	  0.086853	  0.262933	
 
-MOTIF Hoxd13.mouse_homeodomain_2 
+MOTIF Hoxd13_2 
 
 letter-probability matrix: alength= 4 w= 11 nsites= 4445 E= 0
   0.184104	  0.228440	  0.324953	  0.262503	
@@ -1607,7 +1607,7 @@ letter-probability matrix: alength= 4 w= 11 nsites= 4445 E= 0
   0.615679	  0.159288	  0.070406	  0.154627	
   0.280616	  0.350906	  0.101108	  0.267370	
 
-MOTIF Hoxd3.mouse_homeodomain_1 
+MOTIF Hoxd3_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 1578 E= 0
   0.319738	  0.206118	  0.298616	  0.175528	
@@ -1621,7 +1621,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 1578 E= 0
   0.329694	  0.211063	  0.310771	  0.148472	
   0.182083	  0.315368	  0.268026	  0.234523	
 
-MOTIF Hoxd9.mouse_homeodomain_1 
+MOTIF Hoxd9_1 
 
 letter-probability matrix: alength= 4 w= 9 nsites= 292 E= 0
   0.149888	  0.451902	  0.331096	  0.067114	
@@ -1634,7 +1634,7 @@ letter-probability matrix: alength= 4 w= 9 nsites= 292 E= 0
   0.814516	  0.044355	  0.000000	  0.141129	
   0.668317	  0.143564	  0.153465	  0.034653	
 
-MOTIF Hoxd9.mouse_homeodomain_2 
+MOTIF Hoxd9_2 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 270 E= 0
   0.232919	  0.136646	  0.602484	  0.027950	
@@ -1648,7 +1648,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 270 E= 0
   0.638158	  0.085526	  0.131579	  0.144737	
   0.425641	  0.143590	  0.097436	  0.333333	
 
-MOTIF Hoxd9.mouse_homeodomain_3 
+MOTIF Hoxd9_3 
 
 letter-probability matrix: alength= 4 w= 9 nsites= 233 E= 0
   0.245989	  0.296791	  0.454545	  0.002674	
@@ -1661,7 +1661,7 @@ letter-probability matrix: alength= 4 w= 9 nsites= 233 E= 0
   0.960452	  0.039548	  0.000000	  0.000000	
   0.558824	  0.164706	  0.123529	  0.152941	
 
-MOTIF IRX2_homeodomain_1 
+MOTIF IRX2_1 
 
 letter-probability matrix: alength= 4 w= 12 nsites= 18360 E= 0
   0.191337	  0.189511	  0.305925	  0.313228	
@@ -1677,7 +1677,7 @@ letter-probability matrix: alength= 4 w= 12 nsites= 18360 E= 0
   0.329917	  0.200283	  0.049634	  0.420165	
   0.157842	  0.216332	  0.484480	  0.141346	
 
-MOTIF IRX5_homeodomain_1 
+MOTIF IRX5_1 
 
 letter-probability matrix: alength= 4 w= 12 nsites= 1690 E= 0
   0.217484	  0.204691	  0.226724	  0.351102	
@@ -1693,7 +1693,7 @@ letter-probability matrix: alength= 4 w= 12 nsites= 1690 E= 0
   0.321409	  0.185908	  0.052033	  0.440650	
   0.184211	  0.214083	  0.439545	  0.162162	
 
-MOTIF ISL2_homeodomain_1 
+MOTIF ISL2_1 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 8134 E= 0
   0.144961	  0.239254	  0.514999	  0.100787	
@@ -1705,7 +1705,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 8134 E= 0
   0.776690	  0.028414	  0.008138	  0.186759	
   0.484262	  0.105865	  0.280186	  0.129687	
 
-MOTIF ISX_homeodomain_1 
+MOTIF ISX_1 
 
 letter-probability matrix: alength= 4 w= 13 nsites= 4627 E= 0
   0.158954	  0.265618	  0.170060	  0.405368	
@@ -1722,7 +1722,7 @@ letter-probability matrix: alength= 4 w= 13 nsites= 4627 E= 0
   0.962378	  0.001336	  0.017142	  0.019145	
   0.382373	  0.170946	  0.293546	  0.153134	
 
-MOTIF ISX_homeodomain_2 
+MOTIF ISX_2 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 19801 E= 0
   0.107497	  0.509763	  0.151509	  0.231231	
@@ -1734,7 +1734,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 19801 E= 0
   0.952509	  0.007111	  0.003382	  0.036998	
   0.375222	  0.204761	  0.284118	  0.135899	
 
-MOTIF ISX_homeodomain_3 
+MOTIF ISX_3 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 2088 E= 0
   0.153995	  0.417918	  0.176271	  0.251816	
@@ -1746,7 +1746,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 2088 E= 0
   0.976821	  0.000000	  0.000000	  0.023179	
   0.373062	  0.148740	  0.341085	  0.137112	
 
-MOTIF Irx3.mouse_homeodomain_1 
+MOTIF Irx3_1 
 
 letter-probability matrix: alength= 4 w= 12 nsites= 945 E= 0
   0.017523	  0.539720	  0.026869	  0.415888	
@@ -1762,7 +1762,7 @@ letter-probability matrix: alength= 4 w= 12 nsites= 945 E= 0
   0.603696	  0.102669	  0.019507	  0.274127	
   0.659251	  0.040984	  0.022248	  0.277518	
 
-MOTIF LBX2_homeodomain_1 
+MOTIF LBX2_1 
 
 letter-probability matrix: alength= 4 w= 13 nsites= 72 E= 0
   0.183673	  0.530612	  0.224490	  0.061224	
@@ -1779,7 +1779,7 @@ letter-probability matrix: alength= 4 w= 13 nsites= 72 E= 0
   0.000000	  0.136364	  0.181818	  0.681818	
   0.888889	  0.000000	  0.111111	  0.000000	
 
-MOTIF LBX2_homeodomain_2 
+MOTIF LBX2_2 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 3259 E= 0
   0.270027	  0.246662	  0.277704	  0.205607	
@@ -1793,7 +1793,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 3259 E= 0
   0.330330	  0.144811	  0.378712	  0.146146	
   0.240988	  0.326101	  0.245995	  0.186916	
 
-MOTIF LHX2_homeodomain_1 
+MOTIF LHX2_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 53930 E= 0
   0.331282	  0.218507	  0.321099	  0.129113	
@@ -1807,7 +1807,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 53930 E= 0
   0.397472	  0.140759	  0.316404	  0.145365	
   0.158071	  0.350160	  0.247113	  0.244656	
 
-MOTIF LHX2_homeodomain_2 
+MOTIF LHX2_2 
 
 letter-probability matrix: alength= 4 w= 15 nsites= 67216 E= 0
   0.019409	  0.397778	  0.020265	  0.562548	
@@ -1826,7 +1826,7 @@ letter-probability matrix: alength= 4 w= 15 nsites= 67216 E= 0
   0.028635	  0.019478	  0.163103	  0.788784	
   0.582397	  0.005017	  0.394371	  0.018215	
 
-MOTIF LHX6_homeodomain_1 
+MOTIF LHX6_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 4863 E= 0
   0.418432	  0.173276	  0.348806	  0.059486	
@@ -1840,7 +1840,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 4863 E= 0
   0.316629	  0.120919	  0.525626	  0.036826	
   0.123507	  0.372774	  0.164075	  0.339644	
 
-MOTIF LHX6_homeodomain_2 
+MOTIF LHX6_2 
 
 letter-probability matrix: alength= 4 w= 16 nsites= 3169 E= 0
   0.004741	  0.148230	  0.001580	  0.845449	
@@ -1860,7 +1860,7 @@ letter-probability matrix: alength= 4 w= 16 nsites= 3169 E= 0
   0.004918	  0.048197	  0.040000	  0.906885	
   0.716601	  0.003638	  0.279101	  0.000661	
 
-MOTIF LHX6_homeodomain_3 
+MOTIF LHX6_3 
 
 letter-probability matrix: alength= 4 w= 12 nsites= 1987 E= 0
   0.011871	  0.017094	  0.009972	  0.961064	
@@ -1876,7 +1876,7 @@ letter-probability matrix: alength= 4 w= 12 nsites= 1987 E= 0
   0.000000	  0.568720	  0.014692	  0.416588	
   0.967293	  0.017397	  0.008351	  0.006959	
 
-MOTIF LHX9_homeodomain_1 
+MOTIF LHX9_1 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 1670 E= 0
   0.188667	  0.379333	  0.199333	  0.232667	
@@ -1888,7 +1888,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 1670 E= 0
   0.875657	  0.016346	  0.065966	  0.042032	
   0.372248	  0.147432	  0.352902	  0.127418	
 
-MOTIF LHX9_homeodomain_2 
+MOTIF LHX9_2 
 
 letter-probability matrix: alength= 4 w= 13 nsites= 843 E= 0
   0.053367	  0.011436	  0.007624	  0.927573	
@@ -1905,7 +1905,7 @@ letter-probability matrix: alength= 4 w= 13 nsites= 843 E= 0
   0.012953	  0.033679	  0.007772	  0.945596	
   0.925222	  0.005070	  0.026616	  0.043093	
 
-MOTIF LMX1A_homeodomain_1 
+MOTIF LMX1A_1 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 6984 E= 0
   0.130477	  0.231687	  0.197515	  0.440320	
@@ -1917,7 +1917,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 6984 E= 0
   0.814272	  0.016376	  0.116895	  0.052456	
   0.547327	  0.137486	  0.221187	  0.094000	
 
-MOTIF LMX1B_homeodomain_1 
+MOTIF LMX1B_1 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 4754 E= 0
   0.211220	  0.235366	  0.239512	  0.313902	
@@ -1929,7 +1929,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 4754 E= 0
   0.871811	  0.019983	  0.004252	  0.103954	
   0.513171	  0.161463	  0.197317	  0.128049	
 
-MOTIF LMX1B_homeodomain_2 
+MOTIF LMX1B_2 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 794 E= 0
   0.057183	  0.401674	  0.242678	  0.298466	
@@ -1941,7 +1941,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 794 E= 0
   0.880835	  0.000000	  0.062654	  0.056511	
   0.417598	  0.294693	  0.104749	  0.182961	
 
-MOTIF Lhx4.mouse_homeodomain_1 
+MOTIF Lhx4_1 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 3304 E= 0
   0.145769	  0.282211	  0.170984	  0.401036	
@@ -1953,7 +1953,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 3304 E= 0
   0.855286	  0.011518	  0.093325	  0.039870	
   0.453886	  0.155095	  0.296028	  0.094991	
 
-MOTIF Lhx8.mouse_homeodomain_1 
+MOTIF Lhx8_1 
 
 letter-probability matrix: alength= 4 w= 18 nsites= 1406 E= 0
   0.137962	  0.422904	  0.176736	  0.262399	
@@ -1975,7 +1975,7 @@ letter-probability matrix: alength= 4 w= 18 nsites= 1406 E= 0
   0.693992	  0.018773	  0.244681	  0.042553	
   0.329125	  0.250676	  0.320108	  0.100090	
 
-MOTIF Lhx8.mouse_homeodomain_2 
+MOTIF Lhx8_2 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 6083 E= 0
   0.092676	  0.508148	  0.181622	  0.217554	
@@ -1987,7 +1987,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 6083 E= 0
   0.725253	  0.000000	  0.274747	  0.000000	
   0.268264	  0.227023	  0.423409	  0.081304	
 
-MOTIF Lhx8.mouse_homeodomain_3 
+MOTIF Lhx8_3 
 
 letter-probability matrix: alength= 4 w= 12 nsites= 7427 E= 0
   0.050130	  0.024741	  0.009197	  0.915933	
@@ -2003,7 +2003,7 @@ letter-probability matrix: alength= 4 w= 12 nsites= 7427 E= 0
   0.009469	  0.514970	  0.005849	  0.469712	
   0.931498	  0.012251	  0.017389	  0.038862	
 
-MOTIF MEOX1_homeodomain_1 
+MOTIF MEOX1_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 3280 E= 0
   0.301899	  0.234588	  0.328557	  0.134955	
@@ -2017,7 +2017,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 3280 E= 0
   0.318773	  0.303768	  0.149717	  0.227743	
   0.190603	  0.436188	  0.204598	  0.168610	
 
-MOTIF MEOX2_homeodomain_1 
+MOTIF MEOX2_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 28487 E= 0
   0.338460	  0.159681	  0.285553	  0.216307	
@@ -2031,7 +2031,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 28487 E= 0
   0.402591	  0.141245	  0.170748	  0.285416	
   0.247315	  0.300681	  0.238539	  0.213465	
 
-MOTIF MEOX2_homeodomain_2 
+MOTIF MEOX2_2 
 
 letter-probability matrix: alength= 4 w= 17 nsites= 7539 E= 0
   0.166915	  0.177217	  0.257838	  0.398029	
@@ -2052,7 +2052,7 @@ letter-probability matrix: alength= 4 w= 17 nsites= 7539 E= 0
   0.850991	  0.005716	  0.114837	  0.028455	
   0.291685	  0.335423	  0.267503	  0.105389	
 
-MOTIF MEOX2_homeodomain_3 
+MOTIF MEOX2_3 
 
 letter-probability matrix: alength= 4 w= 14 nsites= 8860 E= 0
   0.174255	  0.353908	  0.326298	  0.145539	
@@ -2070,7 +2070,7 @@ letter-probability matrix: alength= 4 w= 14 nsites= 8860 E= 0
   0.915216	  0.014149	  0.027288	  0.043346	
   0.442454	  0.112638	  0.205767	  0.239141	
 
-MOTIF MIXL1_homeodomain_1 
+MOTIF MIXL1_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 29615 E= 0
   0.250499	  0.223245	  0.245766	  0.280490	
@@ -2084,7 +2084,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 29615 E= 0
   0.358258	  0.180978	  0.315398	  0.145366	
   0.297833	  0.312921	  0.226647	  0.162599	
 
-MOTIF MNX1_homeodomain_1 
+MOTIF MNX1_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 660 E= 0
   0.349180	  0.040984	  0.350820	  0.259016	
@@ -2098,7 +2098,7 @@ letter-probability matrix: alength= 4 w= 10 nsites= 660 E= 0
   0.523810	  0.088670	  0.183908	  0.203612	
   0.432079	  0.201309	  0.178396	  0.188216	
 
-MOTIF MSX1_homeodomain_1 
+MOTIF MSX1_1 
 
 letter-probability matrix: alength= 4 w= 18 nsites= 7003 E= 0
   0.144368	  0.343186	  0.377722	  0.134723	
@@ -2120,7 +2120,7 @@ letter-probability matrix: alength= 4 w= 18 nsites= 7003 E= 0
   0.034416	  0.041050	  0.009952	  0.914582	
   0.859755	  0.010538	  0.075314	  0.054393	
 
-MOTIF MSX1_homeodomain_2 
+MOTIF MSX1_2 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 13679 E= 0
   0.163895	  0.383475	  0.313492	  0.139138	
@@ -2132,7 +2132,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 13679 E= 0
   0.950097	  0.001787	  0.014728	  0.033388	
   0.350515	  0.195500	  0.279856	  0.174129	
 
-MOTIF MSX1_homeodomain_3 
+MOTIF MSX1_3 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 3270 E= 0
   0.150016	  0.430849	  0.256102	  0.163033	
@@ -2144,7 +2144,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 3270 E= 0
   0.907293	  0.034839	  0.031001	  0.026867	
   0.278139	  0.264802	  0.307417	  0.149642	
 
-MOTIF MSX2_homeodomain_1 
+MOTIF MSX2_1 
 
 letter-probability matrix: alength= 4 w= 18 nsites= 1391 E= 0
   0.102249	  0.218814	  0.505112	  0.173824	
@@ -2166,7 +2166,7 @@ letter-probability matrix: alength= 4 w= 18 nsites= 1391 E= 0
   0.009132	  0.029354	  0.001305	  0.960209	
   0.911880	  0.004721	  0.052714	  0.030685	
 
-MOTIF MSX2_homeodomain_2 
+MOTIF MSX2_2 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 3508 E= 0
   0.152059	  0.496471	  0.245588	  0.105882	
@@ -2178,7 +2178,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 3508 E= 0
   0.976450	  0.017519	  0.000000	  0.006031	
   0.352457	  0.232716	  0.262430	  0.152398	
 
-MOTIF Meox2.mouse_homeodomain_1 
+MOTIF Meox2_1 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 5164 E= 0
   0.212888	  0.205657	  0.296682	  0.284772	
@@ -2190,7 +2190,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 5164 E= 0
   0.807765	  0.004638	  0.143103	  0.044494	
   0.238409	  0.312846	  0.249468	  0.199277	
 
-MOTIF Msx3.mouse_homeodomain_1 
+MOTIF Msx3_1 
 
 letter-probability matrix: alength= 4 w= 18 nsites= 822 E= 0
   0.141427	  0.297872	  0.430538	  0.130163	
@@ -2212,7 +2212,7 @@ letter-probability matrix: alength= 4 w= 18 nsites= 822 E= 0
   0.018270	  0.040195	  0.004872	  0.936663	
   0.894452	  0.008119	  0.067659	  0.029770	
 
-MOTIF Msx3.mouse_homeodomain_2 
+MOTIF Msx3_2 
 
 letter-probability matrix: alength= 4 w= 8 nsites= 8601 E= 0
   0.164797	  0.387470	  0.297852	  0.149881	
@@ -2224,7 +2224,7 @@ letter-probability matrix: alength= 4 w= 8 nsites= 8601 E= 0
   0.958810	  0.006751	  0.010069	  0.024371	
   0.320845	  0.207255	  0.309629	  0.162272	
 
-MOTIF NKX2-3_homeodomain_1 
+MOTIF NKX2-3_1 
 
 letter-probability matrix: alength= 4 w= 10 nsites= 728 E= 0
   0.480315	  0.200000	  0.137008	  0.182677	

@@ -1,1 +1,0 @@
-42	NR2F1_nuclearreceptor_2	22	5	19	16

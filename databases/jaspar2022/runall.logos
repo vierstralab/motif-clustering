@@ -1,0 +1,9 @@
+mkdir -p logos/
+
+#HUMAN
+
+motifs=$(tail -n +2 annotation.txt | cut -f1)
+
+for m in $motifs; do
+	ceqlogo -i JASPAR2018_CORE_vertebrates_non-redundant_pfms.meme -m ${m} -o logos/${m}.eps -f EPS
+done

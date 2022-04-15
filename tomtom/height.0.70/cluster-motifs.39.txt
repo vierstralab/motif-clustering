@@ -1,1 +1,0 @@
-THRB_nuclearreceptor_2	GTGACCTTATTAAGGTCAC	+	19	0	0	39
