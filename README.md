@@ -6,31 +6,37 @@ Please note that this documentation is  ***incomplete***, as should be used a a 
 If you are looking for the final results (motif clusters, genome-wide scans and a browser shot) please see the following website:
 https://resources.altius.org/~jvierstra/projects/motif-clustering/
 
+ 
 Contact me at ```jvierstra (at) altius.org``` with any questions/requests/comments.
 
 ## Requirements
 
-- Python 2.7
-  - numpy, scipy
+- Python 3.5+
+  - numpy
+  - scipy
+  - seaborn
+  - matplotlib
   - genome-tools (http://www.github.com/jvierstra/genome-tools)
-- Tomtom (http://meme-suite.org/doc/download.html)
-- bedops (http://bedops.readthedocs.io)
+- TOMTOM (http://meme-suite.org/doc/download.html)
+- BEDOPS (http://bedops.readthedocs.io)
 
-## Included motif databases
+## Versions
 
-- Jolma et al., Cell 2013 (Supplemental Table 2) 
-- JASPAR 2018
-- HOCOMOCO version 11 (757 motif models; both human and mouse)
+- Version 1.0
+  - Jolma et al., Cell 2013 (Supplemental Table 2) 
+  - JASPAR 2018
+  - HOCOMOCO version 11 (757 motif models; both human and mouse)
+	
+- Version 2.0beta-human (current repo)
+  - CIS-BP (homo sapien; only motifs w/ direct measurement)
+  - JASPAR2022
+  - BANP from Grand 2021
 
-## Pre-computed data (GRCh38/hg38)
+## Quick start
 
-We have pre-computed genome-wide scans for both human and mouse genomes.
-- Human (GRCh38/h38)
-	- Full motif matches (2179 motif models)
-	- Collapsed motifs by similarity (286 motif clusters)
-- Mouse (mm10)
-	- Full motif matches (2179 motif models)
-	- Collapsed motifs by similarity (286 motif clusters)
+## Step 1: Download and preproces motifs
+
+See `runall` script in each motif database directory (`databases/*`)
 
 ## Step 1: Compute pair-wise motif similarity
 
@@ -49,57 +55,33 @@ tomtom \
 > tomtom/tomtom.all.txt
 ```
 
-I have a provided a script that will load this operation up on a SLURM parallel compute cluster (see [runall.tomtom](runall.tomtom))
+I have a provided a script that will load this operation up on a SLURM parallel compute cluster (see [bin/runall.tomtom.v2.0beta-human](bin/runall.tomtom.v2.0beta-human) for an example)
 
-## Step 2: Hierarchically cluster motifs by similarity
+## Step 2: Hierarchically cluster motifs
 
-```
-python2 hierarchical.py tomtom/tomtom.all.txt tomtom
-```
+After running TOMTOM, open up the provided Jupyter Notebook to perform the clustering and visualization
 
-This script performs hierarchical clustering (distance: correlation, complete linkage) and provides an output of cluster assignments at a range of tree heights (0.5-1). Below is a heatmap representation of motifs clustered by simililarity and clusters identified cutting the dendrogram at height 0.7.
+We perform hierarchical clustering (distance: correlation, complete linkage) from the TOMTOM similarity E-values. Below is a heatmap representation of motifs clustered by simililarity and clusters identified cutting the dendrogram at height 0.7.
 
-![Clustered heatmap cut at height 0.7](tomtom/height.0.70/heatmap.png)
+![Clustered heatmap cut at height 0.7](docs/heatmap.png)
 
 ## Step 3: Process each cluster to build a motif archetype
 
-```
-mkdir -p tomtom/height.0.70/viz
-
-python2 process_cluster.py \
-  tomtom/tomtom.all.txt \
-  tomtom/clusters.0.70.txt \
-  62 \
-  tomtom/height.0.70
-```
-
-This command generates two files (per motif cluster).
-
-I have a provided a script that will load this operation up on a SLURM parallel compute cluster (see [runall.process_cluster](runall.process_cluster))
-
-
-```
-python2 viz_cluster.py \
-  tomtom/height.0.70/cluster-info.62.txt \
-  tomtom/height.0.70/cluster-motifs.62.txt \
-  tomtom/height.0.70/viz/cluster.62 
- ```
-
-This wiil create a PDF and PNG with visualizing motif cluster #62 corresponding to the basic helix-loop-helix DBD containing OLIG/NEUROG. Dashed lines demarcate the boundaries of the "archetypal" motif position. The motif matches for the constituent models have will have their coordinates adjusted to match.
+Again, inside the notebook there is code that will process and visualize each motif cluster. 
 
 
 C62:OLIG (bHLH)|  C179:RUNX (RUNX domain)
 :-------------------------:|:-------------------------:
-![C62:OLIG](tomtom/height.0.70/viz/cluster.62.png)| ![C69:MEIS](tomtom/height.0.70/viz/cluster.179.png)
+![AC0002](docs/AC0002.png)| ![AC0240](docs/AC0240.png)
 
+## Step 4: Make HTML output
 
+Run the BASH script `bin/runall.make-html` to generate an HTML webpage (index.html) in the `results` directory
 
-## Step 4: Scan genome using all motif models (individually) then resassign labels & coordinates
+## Step 5: Scan genome using all motif models (individually and archetype)
 
 I use the software package [MOODS](https://github.com/jhkorhonen/MOODS) to find motif matches genome-wide. Its a great tool and that I highly reccomend.
 See [runall.scan_models](runall.scan_models) for an example of how to do this on a SLURM cluster.
-
-Finally, we need to translate the coordinates and motif labels for each motif match to their corresponding motif archetype (see [runall.reassign](runall.resassign)).
 
 
 ## Step 5: Create working and browser tracks
@@ -112,16 +94,12 @@ table hg38_motifs_collapsed
 string  chrom;        "Reference sequence chromosome or scaffold"
 uint    chromStart;    "Start position of feature on chromosome"
 uint    chromEnd;    "End position of feature on chromosome"
-string  name;        "Name of gene"
+string  name;        "Name of motif"
 uint    score;        "Score"
 char[1] strand;        "+ or - for strand"
 uint    thickStart;    "Coding region start"
 uint    thickEnd;    "Coding region end"
 uint      reserved;    "itemRgb"
-string  motif_match_id;    "Motif identifier"
-float  motif_match_score;        "Motif match score (MOODS score)"
-string DBD;     "DNA binding domain"
-uint n; "Number of motif matches from cluster"
 )
 ```
 Make the tracks for the archetypes
