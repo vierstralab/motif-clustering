@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 cat <<__HTML__ > results/index.html
 
 <html>
@@ -29,12 +28,10 @@ min-width:900px;
 .content {
 display: grid;
 grid-template-columns: 500px auto;
-height: calc(100vh - 75px;)
-
+height: calc(100vh - 125px);
 }
 
 .sidebar {
- height: 100vh;
  overflow-y: scroll;
 }
 
@@ -42,11 +39,19 @@ height: calc(100vh - 75px;)
  width: auto;
  display: flex;
  flex-wrap: wrap;
-width: auto;
+   align-items:flex-start;
+  align-content:flex-start;
+ overflow-y: scroll;
+   flex-direction: row;}
 
 
-height: 100vh;
-overflow-y: scroll}
+span.terms {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+
 
 .flex > div {
  margin: 5px;
@@ -124,9 +129,41 @@ img{
     color: gold;
 }
 
+.searchwrapper {
+  position: relative;
+  display: flex;
+  width: 200px;
+  height: 50px;
+  margin-left: 200px;
+}
 
+.search {
+  border: 1px solid grey;
+  height: 25px;
+  width: 100%;
+  padding: 2px 30px 2px 2px;
+  outline: 0;
+  background-color: #f5f5f5;
+}
+
+
+
+.clear-icon {
+  position: absolute;
+  top: 3px;
+  right: 8px;
+  width: 19px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.search:hover, .search:focus {
+  border: 1px solid #009688;
+  background-color: white;
+}
 
 </style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 
@@ -139,8 +176,19 @@ img{
             <li><a href="tomtom/tomtom.all.txt">Pairwise similarity matrix (TSV)</a></li>
             <li><a href="consensus_pwms.meme">Archetype models (MEME-format)</a></li>
             <li><a href="all.dbs.meme">Individual models (MEME-format)</a></li>
+            <li><a href="https://github.com/jvierstra/motif-clustering"><i class="fa fa-github" style="font-size: 18px; margin-right:5px;"></i>GitHub</a></li>
         </ul>
     </div>
+    
+    <div class="searchwrapper">
+      <input placeholder="Search..."
+          id="search"
+         type="text" 
+         class="search">
+         <img class="clear-icon" id="clear-icon" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxLjk3NiA1MS45NzYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxLjk3NiA1MS45NzY7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KPGc+Cgk8cGF0aCBkPSJNNDQuMzczLDcuNjAzYy0xMC4xMzctMTAuMTM3LTI2LjYzMi0xMC4xMzgtMzYuNzcsMGMtMTAuMTM4LDEwLjEzOC0xMC4xMzcsMjYuNjMyLDAsMzYuNzdzMjYuNjMyLDEwLjEzOCwzNi43NywwICAgQzU0LjUxLDM0LjIzNSw1NC41MSwxNy43NCw0NC4zNzMsNy42MDN6IE0zNi4yNDEsMzYuMjQxYy0wLjc4MSwwLjc4MS0yLjA0NywwLjc4MS0yLjgyOCwwbC03LjQyNS03LjQyNWwtNy43NzgsNy43NzggICBjLTAuNzgxLDAuNzgxLTIuMDQ3LDAuNzgxLTIuODI4LDBjLTAuNzgxLTAuNzgxLTAuNzgxLTIuMDQ3LDAtMi44MjhsNy43NzgtNy43NzhsLTcuNDI1LTcuNDI1Yy0wLjc4MS0wLjc4MS0wLjc4MS0yLjA0OCwwLTIuODI4ICAgYzAuNzgxLTAuNzgxLDIuMDQ3LTAuNzgxLDIuODI4LDBsNy40MjUsNy40MjVsNy4wNzEtNy4wNzFjMC43ODEtMC43ODEsMi4wNDctMC43ODEsMi44MjgsMGMwLjc4MSwwLjc4MSwwLjc4MSwyLjA0NywwLDIuODI4ICAgbC03LjA3MSw3LjA3MWw3LjQyNSw3LjQyNUMzNy4wMjIsMzQuMTk0LDM3LjAyMiwzNS40NiwzNi4yNDEsMzYuMjQxeiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+
+        </div>
+    
     <div class="content">
             <div class="sidebar">
                 <img src="clusters/AC0001.png" id="sidebar"/>
@@ -149,9 +197,11 @@ img{
 __HTML__
 
 
-while IFS=$'\t' read -r name n; do    
-cat <<__HTML__ >> index.html
-             <div class="pwm"><h2>${name}</h2><img id="${name}" src="clusters/logos/${name}.png"/><h3>${n} motifs</h3></div>
+while IFS=$'\t' read -r name n motif_ids tf_names; do    
+cat <<__HTML__ >> results/index.html
+             <div class="pwm"><h2>${name}</h2><img id="${name}" src="clusters/logos/${name}.png"/><h3>${n} motifs</h3>
+             <span class="terms">${motif_ids} ${tf_names}</p>
+             </div>
 __HTML__
 
 done < results/clusters.txt
@@ -171,7 +221,31 @@ cat <<__HTML__ >> results/index.html
         \$('#sidebar').attr('src', 'clusters/' + \$(this).find('img').first().attr('id') + '.png')            
     })
     
+      \$('#search').keyup(function() {
+        var term = \$(this).val()
 
+        if(term && \$('#clear-icon').css('visibility') != 'visible') {
+            \$('#clear-icon').css('visibility', 'visible');
+        } else if(!term) {
+            \$('#clear-icon').css('visibility', 'hidden');
+        }
+  
+        
+        \$('.pwm').each(function() {
+            var \$this = \$(this);
+            var \$terms = \$(this).find('span');
+            if(\$terms.text().indexOf(term) === -1)
+                \$this.hide()
+            else \$this.show()
+
+        })
+    })
+    
+    \$('#clear-icon').click(function() {
+        \$('#search').val('');
+        \$('#clear-icon').css('visibility', 'hidden');
+        \$('#search').trigger('keyup');
+    })
 </script>
 
 </html>
