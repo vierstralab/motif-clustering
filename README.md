@@ -6,7 +6,8 @@ Please note that this documentation is  ***incomplete***, as should be used a a 
 If you are looking for the final results (motif clusters, genome-wide scans and a browser shot) please see the following website:
 https://resources.altius.org/~jvierstra/projects/motif-clustering/
 
- 
+> ***Note***: The above link is for version 1.0 of the motif clusters. While we have yet to update the wevuate, version 2.0-beta (latest) can be found at https://resources.altius.org/~jvierstra/projects/motif-clustering-v2.0beta/.
+
 Contact me at ```jvierstra (at) altius.org``` with any questions/requests/comments.
 
 ## Requirements
@@ -22,12 +23,12 @@ Contact me at ```jvierstra (at) altius.org``` with any questions/requests/commen
 
 ## Versions
 
-- Version 1.0
+- Version 1.0 (complete documation: https://resources.altius.org/~jvierstra/projects/motif-clustering/)
   - Jolma et al., Cell 2013 (Supplemental Table 2) 
   - JASPAR 2018
   - HOCOMOCO version 11 (757 motif models; both human and mouse)
 	
-- Version 2.0beta-human (current repo)
+- Version 2.0beta-human (https://resources.altius.org/~jvierstra/projects/motif-clustering-v2.0beta/)
   - CIS-BP (homo sapien; only motifs w/ direct measurement)
   - JASPAR2022
   - BANP from Grand 2021
@@ -81,7 +82,7 @@ Run the BASH script `bin/runall.make-html` to generate an HTML webpage (index.ht
 ## Step 5: Scan genome using all motif models (individually and archetype)
 
 I use the software package [MOODS](https://github.com/jhkorhonen/MOODS) to find motif matches genome-wide. Its a great tool and that I highly reccomend.
-See [runall.scan_models](runall.scan_models) for an example of how to do this on a SLURM cluster.
+See [bin/runall.scan_models](bin/runall.scan_models) for an example of how to do this on a SLURM cluster.
 
 
 ## Step 5: Create working and browser tracks
