@@ -200,7 +200,7 @@ __HTML__
 while IFS=$'\t' read -r name n motif_ids tf_names; do    
 cat <<__HTML__ >> results/index.html
              <div class="pwm"><h2>${name}</h2><img id="${name}" src="clusters/logos/${name}.png"/><h3>${n} motifs</h3>
-             <span class="terms">${motif_ids} ${tf_names}</p>
+             <span class="terms">${name} ${motif_ids} ${tf_names}</p>
              </div>
 __HTML__
 
