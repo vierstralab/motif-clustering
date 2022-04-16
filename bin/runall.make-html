@@ -10,101 +10,31 @@ cat <<__HTML__ > results/index.html
     
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
     
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     
-    
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-    * {
-        font-family: 'IBM Plex Mono'
-    }
+    font-family: 'IBM Plex Mono'
+}
 
 body {
-min-width:900px;
+    min-width:900px;
 }
 
-.content {
-display: grid;
-grid-template-columns: 500px auto;
-height: calc(100vh - 125px);
-}
-
-.sidebar {
- overflow-y: scroll;
-}
-
-.flex {
- width: auto;
- display: flex;
- flex-wrap: wrap;
-   align-items:flex-start;
-  align-content:flex-start;
- overflow-y: scroll;
-   flex-direction: row;}
-
-
-span.terms {
-  height: 0;
-  overflow: hidden;
-  position: absolute;
-}
-
-
-
-.flex > div {
- margin: 5px;
- padding: 0px;
- border: 1px solid black;
-}
-    
-.pwm > h2 {
-    background-color: black;
-    color: white;
-    margin: 0;
-    font-size: 14px;
-    text-align: center;
-    padding: 4px;
-}
-    
-.pwm:hover > h2 {
-    background-color: lightgrey;
-}
-
-.highlight > h2 {
-    background-color: red;
-}
-
-img{
-    display: block;
-    margin: auto;
-    padding: 4px;
-}
-      
-.flex > div > h3 {
-    border-top: 1px solid black;
-    margin: 0;
-    font-size: 10px;
-    text-align: left;
-    padding: 4px;
-}    
-    
 .header {
     background-color: black;
     color: white;
     margin-bottom: 15px;
     width: 100%;
     padding: 10px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     height:75px;
     padding: 0 25px;
 }
-
-
 
 .header h1 {
     font-size: 16px;
@@ -119,13 +49,13 @@ img{
 
 .nav {
     display: grid;
-                list-style: none;
-            grid-auto-flow: column;
-            align-items: center;
-            gap: 0 40px;
-            font-size: 12px;
-            font-weight: 500;
-            line-height: 16px;
+    list-style: none;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 0 40px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
 }
 
 .nav > li > a {
@@ -137,32 +67,30 @@ img{
 }
 
 .searchwrapper {
-  position: relative;
-  display: flex;
-  width: 200px;
-  height: 50px;
-  margin-left: 200px;
+    position: relative;
+    display: flex;
+    width: 200px;
+    height: 50px;
+    margin-left: 200px;
 }
 
 .search {
-  border: 1px solid grey;
-  height: 25px;
-  width: 100%;
-  padding: 2px 30px 2px 2px;
-  outline: 0;
-  background-color: #f5f5f5;
+    border: 1px solid grey;
+    height: 25px;
+    width: 100%;
+    padding: 2px 30px 2px 2px;
+    outline: 0;
+    background-color: #f5f5f5;
 }
 
-
-
 .clear-icon {
-  position: absolute;
-  top: 6px;
-  right: 3px;
-  width: 19px;
-  cursor: pointer;
-  visibility: hidden;
-  font-size: 14px;
+    position: absolute;
+    top: 6px;
+    right: 3px;
+    width: 19px;
+    cursor: pointer;
+    visibility: hidden;
+    font-size: 14px;
     color: #009688;
 }
 
@@ -171,7 +99,129 @@ img{
   background-color: white;
 }
 
+.content {
+    display: grid;
+    grid-template-columns: 500px auto;
+    height: calc(100vh - 125px);
+    padding-bottom: 75px;
+}
+
+.sidebar {
+    overflow-y: scroll;
+}
+
+.flex {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    align-content:flex-start;
+    overflow-y: scroll;
+    flex-direction: row;
+    padding-right: 40px;
+}
+
+.flex > div {
+    margin: 5px;
+    padding: 0px;
+    border: 1px solid black;
+}
+
+.pwm > h3 {
+    border-top: 1px solid black;
+    margin: 0;
+    font-size: 10px;
+    text-align: left;
+    padding: 4px;
+}    
+
+.pwm > h2 {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    padding: 4px;
+}
+
+.pwm:hover > h2 {
+    background-color: lightgrey;
+}
+
+.highlight > h2 {
+    background-color: red;
+}
+
+span.terms {
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+img {
+    display: block;
+    margin: auto;
+    padding: 4px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    
+    transform: translateY(350px);
+	transition: transform 0.3s ease, width 0.3s ease;
+    
+    padding: 0 25px;
+    
+    color: white;
+    
+    font-size: 12px;
+}
+
+.footer h1, h2, h3, h4, h5, p, ul {
+    margin-bottom: 1em;
+}
+
+ul {
+    margin-left: 1.5em;
+}
+
+.footer-header {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.footer-header button {
+    display: inline-block;
+}
+
+.footer-content {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 45px;
+    
+}
+.footer-open {
+        transform: translateY(0);
+}
+
+a:visited {
+   color:white;
+}
+a:hover {
+color:gold;
+}
+
+
 </style>
+
 <script src="https://kit.fontawesome.com/3cad6f3047.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
@@ -180,7 +230,7 @@ img{
 
     <div class="header">
         <div>
-        <h1>Non-redundant motif clustering</h1>
+        <h1>Non-redundant TF motif clustering</h1>
         <h2>(v2.0beta&#8212;human)</h2>
         </div>
         <ul class="nav">
@@ -230,6 +280,51 @@ cat <<__HTML__ >> results/index.html
     </div>
 
     </div>
+    
+    
+    <div class="footer" id="footer">
+        <div class="footer-header">
+            <button id="footer-button" href="#" title="Close">
+				<i class="fa fa-bars">
+					<span class="sr-only">Close slideout menu.</span>
+				</i>
+			</button>
+        </div>
+        <div class="footer-content">
+            <div>
+                <h2>Where did we get the PWMs?</h2>
+                <p>The vast majority of the TF models came from databases that have aggregated PWMs the literature. The primary databases used here are: <a href="http://cisbp.ccbr.utoronto.ca/">CIS-BP</a> and <a href="https://jaspar.genereg.net/">JASPAR</a>.</p>
+                
+                  <p>Within the metadata annotations file you will find a PubMed ID (PMID) for each motif when available. These PubMed IDs were ascertained from the source databases. Please cite these publications when using this resource.</p>
+                 <p>We are always looking for more PWMs! If you have one for your favorite TF please send it to us and we will include it in the clusterings.</p>
+            </div>
+            <div><h2>Related resources</h2>
+                <h3>PWM databases</h3>
+                <ul>
+                <li><a href="http://cisbp.ccbr.utoronto.ca/">CIS-BP</a></li>
+                <li><a href="https://jaspar.genereg.net/">JASPAR</a></li>
+                <li><a href="http://gene-regulation.com/pub/databases.html">TRANSFAC (not free; behind paywall)</a></li>
+                <li><a href="https://hocomoco11.autosome.org/">HOCOMOCO (ChIP-seq)</a></li>
+                 <li><a href="http://the_brain.bwh.harvard.edu/uniprobe/">UNIPROBE (PBMs)</a></li>
+                 </ul>
+                 <h3>PWM clustering</h3>
+                <ul>
+                <li><a href="http://rsat.france-bioinformatique.fr/rsat/RSAT_portal.html">RSTAT</a></li>
+                 </ul>
+                  <h3>Analysis methods</h3>
+                <ul>
+                <li><a href="https://www.archrproject.com/">ArchR (for single-cell)</a></li>
+                <li><a href="https://github.com/GreenleafLab/chromVAR">chromVar</a></li>
+                 </ul>
+                
+                </div>
+            <div><h2>Citation</h2>
+            If you use this resource, please kindly cite:</p>
+            <p>Vierstra et al. <a href="https://www.nature.com/articles/s41586-020-2528-x">Global reference mapping of human transcription factor footprints.</a> Nature, 583(7818):729–736. 2020</p>
+            </div>
+            
+        </div>
+    </div>
 </body>
 
 <script>
@@ -240,7 +335,7 @@ cat <<__HTML__ >> results/index.html
         \$('#sidebar').attr('src', 'clusters/' + \$(this).find('img').first().attr('id') + '.png')            
     })
     
-      \$('#search').keyup(function() {
+    \$('#search').keyup(function() {
         var term = \$(this).val()
 
         if(term && \$('#clear-icon').css('visibility') != 'visible') {
@@ -248,22 +343,24 @@ cat <<__HTML__ >> results/index.html
         } else if(!term) {
             \$('#clear-icon').css('visibility', 'hidden');
         }
-  
-        
+
         \$('.pwm').each(function() {
             var \$this = \$(this);
             var \$terms = \$(this).find('span');
             if(\$terms.text().indexOf(term) === -1)
-                \$this.hide()
-            else \$this.show()
-
+                \$this.hide();
+            else \$this.show();
         })
     })
-    
+        
     \$('#clear-icon').click(function() {
         \$('#search').val('');
         \$('#clear-icon').css('visibility', 'hidden');
         \$('#search').trigger('keyup');
+    })
+    
+    \$('#footer-button').click(function() {
+      \$('#footer').toggleClass('footer-open')  
     })
 </script>
 
