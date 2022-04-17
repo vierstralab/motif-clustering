@@ -72,7 +72,7 @@ We perform hierarchical clustering (distance: correlation, complete linkage) fro
 Again, inside the notebook there is code that will process and visualize each motif cluster. 
 
 
-AC0002 (homeodomain)|  AC0240 (CCAA-box)
+AC0002 (homeodomain)|  AC0240 (CCAAT-box)
 :-------------------------:|:-------------------------:
 ![AC0002](docs/AC0002.png)| ![AC0240](docs/AC0240.png)
 
