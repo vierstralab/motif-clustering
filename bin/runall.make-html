@@ -5,7 +5,7 @@ cat <<__HTML__ > results/index.html
 <html>
 
 <head>
-<title>Non-redundant TF motif clustering (v2.0beta -- human)</title>
+<title>Non-redundant TF motif clustering (v2.1beta -- human)</title>
 <style>
     
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
@@ -175,12 +175,13 @@ img {
     transform: translateY(350px);
 	transition: transform 0.3s ease, width 0.3s ease;
     
-    padding: 0 25px;
+    padding: 0 40px 0 25px;
     
     color: white;
     
     font-size: 12px;
 }
+
 
 .footer h1, h2, h3, h4, h5, p, ul {
     margin-bottom: 1em;
@@ -199,6 +200,7 @@ ul {
 
 .footer-header button {
     display: inline-block;
+    padding: 3px;
 }
 
 .footer-content {
@@ -286,14 +288,14 @@ cat <<__HTML__ >> results/index.html
         <div class="footer-header">
             <button id="footer-button" href="#" title="Close">
 				<i class="fa fa-bars">
-					<span class="sr-only">Close slideout menu.</span>
 				</i>
+                <span>More information</span>
 			</button>
         </div>
         <div class="footer-content">
             <div>
                 <h2>Where did we get the PWMs?</h2>
-                <p>The vast majority of the TF models came from databases that have aggregated PWMs the literature. The primary databases used here are: <a href="http://cisbp.ccbr.utoronto.ca/">CIS-BP</a> and <a href="https://jaspar.genereg.net/">JASPAR</a>.</p>
+                <p>The vast majority of the TF models came from databases that have aggregated PWMs from literature. The primary databases used here are: <a href="http://cisbp.ccbr.utoronto.ca/">CIS-BP</a> and <a href="https://jaspar.genereg.net/">JASPAR</a>.</p>
                 
                   <p>Within the metadata annotations file you will find a PubMed ID (PMID) for each motif when available. These PubMed IDs were ascertained from the source databases. Please cite these publications when using this resource.</p>
                  <p>We are always looking for more PWMs! If you have one for your favorite TF please send it to us and we will include it in the clusterings.</p>
