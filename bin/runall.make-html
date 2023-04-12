@@ -233,7 +233,7 @@ color:gold;
     <div class="header">
         <div>
         <h1>Non-redundant TF motif clustering</h1>
-        <h2>(v2.0beta&#8212;human)</h2>
+        <h2>(v2.1beta&#8212;human)</h2>
         </div>
         <ul class="nav">
             <li><a href="metadata.tsv"><i class="fa-solid fa-circle-down" style="margin-right:5px;"></i>Motif metadata</a></li>
